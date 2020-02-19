@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="lem_in_remastered" targetName="lem_in_remastered" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="290c71b1-eb32-4f77-9947-ffce407dc7a2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1Y1VfMQeUvvl2DQFwQQKnGFUz2K" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lem_in_remastered" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lem_in_remastered" TARGET_NAME="lem_in_remastered" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lem_in_remastered" RUN_TARGET_NAME="lem_in_remastered">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="290c71b1-eb32-4f77-9947-ffce407dc7a2" name="Default Changelist" comment="" />
+      <created>1582110189463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582110189463</updated>
+      <workItem from="1582110191762" duration="5280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="346" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582112261425">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="346" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1582112261425" />
+    <state x="546" y="456" width="671" height="486" key="find.popup" timestamp="1582115676705">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="546" y="456" width="671" height="486" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1582115676705" />
+    <state x="531" y="328" key="search.everywhere.popup" timestamp="1582113858573">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="531" y="328" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1582113858573" />
+  </component>
+</project>
