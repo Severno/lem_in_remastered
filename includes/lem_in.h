@@ -2,9 +2,9 @@
 # define LEM_IN_H
 # include "../libft/includes/libft.h"
 # define TABLE_SIZE 100000
-# define LINE_SIZE 100000
+# define LINE_SIZE 1000000
 # define NICE_PRIME_NUMBER 37
-# define MIN_LINKS 100
+# define MIN_LINKS 1000
 # define NUM_LEN_WITH_SIGN 11
 # define NUM_LEN_NO_SIGN 10
 # define INCORRECT_ANTS "ERROR: Ants input is incorrect\n"
@@ -80,10 +80,13 @@ typedef struct			s_concat
 typedef struct			s_room
 {
 	struct s_room		*next;
-	struct s_hash_table	*links;
+	char				**links;
+	char				**out_links;
+	char				**in_links;
 	char				*name;
 	int					coord_x;
 	int					coord_y;
+	int					links_degree;
 	int					in_degree;
 	int					out_degree;
 	int					bfs_lvl;
@@ -120,7 +123,7 @@ void				free_entry(t_entry **entry);
 
 // free data2
 void				free_seen(t_ht **seen);
-void				free_str_links(char ***in_links, char ***out_links);
+void				free_str_links(char ***in_links, char ***out_links, char ***links);
 void				free_split_str(char ***tab);
 void				free_line_info(char ***split_str, char **lines);
 void				terminate(t_lem **lem, char *str);
@@ -223,6 +226,7 @@ t_ht				*create_seen();
 void				bfs_set_lvl(t_lem *lem, t_room *start, char *end);
 void				reverse_set_bfs_lvl(t_lem *lem, t_qnode *current, int	in_degree, char *end);
 void				reverse_bfs_set_lel(t_lem *lem, t_room *start, char *end);
+void				align_links(t_lem *lem, t_room *start);
 /*
 	link_optimization
 */
@@ -234,6 +238,10 @@ void				delete_useless_links(t_lem *lem, t_room *start);
 void				delete_input_links(t_lem *lem, t_room *start);
 void				delete_cur_output_link(t_room *curr_room, t_lem *lem);
 void				delete_output_links(t_lem *lem, t_room *start);
+void				remove_dead_link(t_lem *lem, t_room *dead_room);
+int					get_pos_link_out(char **out_links, char *in_link, int out_degree);
+void				delete_cur_input_link(t_room *curr_room, t_lem *lem);
+void				delete_input_links(t_lem *lem, t_room *start);
 /*
 	printing
 */
@@ -244,13 +252,13 @@ void 				print_paths_linked_list(t_lem *lem, t_room *start);
 void 				print_current_ants_position(t_ht *ants_and_rooms, int curr_ant, t_lem *lem);
 void				print_out_rooms(t_room *room);
 void				print_lines(char *lines);
+void print_rooms_out_in(t_lem *lem);
 
 //lemin
 t_room				*create_room(char **name, int x, int y);
 
 // get_info
 void				get_info(t_lem *lem, char *file_name);
-void				add_link(t_lem *lem, char *lines, char **split_str);
 void				add_el_to_hash_map(t_lem *lem, char **lines, char **split_str);
 void				add_start_or_end(t_lem *lem, char **split_str, char **lines);
 int					check_coord_valid(char *x, char *y);
@@ -263,7 +271,6 @@ void				free_entry(t_entry **entry);
 
 // free data2
 void				free_seen(t_ht **seen);
-void				free_str_links(char ***in_links, char ***out_links);
 void				free_split_str(char ***tab);
 void				free_line_info(char ***split_str, char **lines);
 
@@ -271,12 +278,17 @@ void				free_line_info(char ***split_str, char **lines);
 int					is_end_or_start(t_lem *lem, char **split_str, char **line);
 int					is_room(t_lem *lem, char **split_str, char **lines);
 int					is_connection(t_lem *lem, char **split_connections);
-int					is_ant(const char *lines, char **split_str);
+int					is_ant(t_lem *lem, char *lines, char **split_str);
 int					is_comment(const char *lines);
+char				*lem_strdub(char *str, size_t delimeter);
+int					get_biggest_delimeter(t_lem *lem, char *str, size_t size);
+int					is_link(t_lem *lem, char **split_str, char **lines);
+int					check_coord_valid(char *x, char *y);
+int					check_ants_num(char *lines);
 
 // room_utils
-int					get_real_out_links(t_room *curr_room);
-int					get_real_in_links(t_room *curr_room);
+int					get_real_out_links(t_lem *lem, t_room *curr_room);
+int					get_real_in_links(t_lem *lem, t_room *curr_room);
 
 // Ants
 void				run_path(t_lem *lem, t_room *curr_room, int launched_ants, int *bfs_lvl);

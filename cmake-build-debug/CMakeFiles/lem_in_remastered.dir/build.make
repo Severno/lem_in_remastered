@@ -655,35 +655,9 @@ CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_toupper.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/libft/src/ft_str/ft_toupper.c -o CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_toupper.c.s
 
-CMakeFiles/lem_in_remastered.dir/src/ants.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/ants.c.o: ../src/ants.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/lem_in_remastered.dir/src/ants.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/ants.c.o   -c /Users/sapril/lem_in_remastered/src/ants.c
-
-CMakeFiles/lem_in_remastered.dir/src/ants.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/ants.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/ants.c > CMakeFiles/lem_in_remastered.dir/src/ants.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/ants.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/ants.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/ants.c -o CMakeFiles/lem_in_remastered.dir/src/ants.c.s
-
-CMakeFiles/lem_in_remastered.dir/src/bfs.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/bfs.c.o: ../src/bfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/lem_in_remastered.dir/src/bfs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/bfs.c.o   -c /Users/sapril/lem_in_remastered/src/bfs.c
-
-CMakeFiles/lem_in_remastered.dir/src/bfs.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/bfs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/bfs.c > CMakeFiles/lem_in_remastered.dir/src/bfs.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/bfs.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/bfs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/bfs.c -o CMakeFiles/lem_in_remastered.dir/src/bfs.c.s
-
 CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o: ../src/copy_lines.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o   -c /Users/sapril/lem_in_remastered/src/copy_lines.c
 
 CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.i: cmake_force
@@ -696,7 +670,7 @@ CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.s: cmake_force
 
 CMakeFiles/lem_in_remastered.dir/src/free_data.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/free_data.c.o: ../src/free_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/lem_in_remastered.dir/src/free_data.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/lem_in_remastered.dir/src/free_data.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/free_data.c.o   -c /Users/sapril/lem_in_remastered/src/free_data.c
 
 CMakeFiles/lem_in_remastered.dir/src/free_data.c.i: cmake_force
@@ -709,7 +683,7 @@ CMakeFiles/lem_in_remastered.dir/src/free_data.c.s: cmake_force
 
 CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o: ../src/free_data2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o   -c /Users/sapril/lem_in_remastered/src/free_data2.c
 
 CMakeFiles/lem_in_remastered.dir/src/free_data2.c.i: cmake_force
@@ -720,35 +694,9 @@ CMakeFiles/lem_in_remastered.dir/src/free_data2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/free_data2.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/free_data2.c -o CMakeFiles/lem_in_remastered.dir/src/free_data2.c.s
 
-CMakeFiles/lem_in_remastered.dir/src/get_info.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/get_info.c.o: ../src/get_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/lem_in_remastered.dir/src/get_info.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/get_info.c.o   -c /Users/sapril/lem_in_remastered/src/get_info.c
-
-CMakeFiles/lem_in_remastered.dir/src/get_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/get_info.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/get_info.c > CMakeFiles/lem_in_remastered.dir/src/get_info.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/get_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/get_info.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/get_info.c -o CMakeFiles/lem_in_remastered.dir/src/get_info.c.s
-
-CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o: ../src/handle_errors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o   -c /Users/sapril/lem_in_remastered/src/handle_errors.c
-
-CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/handle_errors.c > CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/handle_errors.c -o CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.s
-
 CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o: ../src/hashmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o   -c /Users/sapril/lem_in_remastered/src/hashmap.c
 
 CMakeFiles/lem_in_remastered.dir/src/hashmap.c.i: cmake_force
@@ -761,7 +709,7 @@ CMakeFiles/lem_in_remastered.dir/src/hashmap.c.s: cmake_force
 
 CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o: ../src/init_structs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o   -c /Users/sapril/lem_in_remastered/src/init_structs.c
 
 CMakeFiles/lem_in_remastered.dir/src/init_structs.c.i: cmake_force
@@ -774,7 +722,7 @@ CMakeFiles/lem_in_remastered.dir/src/init_structs.c.s: cmake_force
 
 CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o: ../src/lem_in.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o   -c /Users/sapril/lem_in_remastered/src/lem_in.c
 
 CMakeFiles/lem_in_remastered.dir/src/lem_in.c.i: cmake_force
@@ -785,22 +733,9 @@ CMakeFiles/lem_in_remastered.dir/src/lem_in.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/lem_in.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/lem_in.c -o CMakeFiles/lem_in_remastered.dir/src/lem_in.c.s
 
-CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o: ../src/link_optimization.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o   -c /Users/sapril/lem_in_remastered/src/link_optimization.c
-
-CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/link_optimization.c > CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/link_optimization.c -o CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s
-
 CMakeFiles/lem_in_remastered.dir/src/parse.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/parse.c.o: ../src/parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/lem_in_remastered.dir/src/parse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/lem_in_remastered.dir/src/parse.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/parse.c.o   -c /Users/sapril/lem_in_remastered/src/parse.c
 
 CMakeFiles/lem_in_remastered.dir/src/parse.c.i: cmake_force
@@ -811,48 +746,9 @@ CMakeFiles/lem_in_remastered.dir/src/parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/parse.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/parse.c -o CMakeFiles/lem_in_remastered.dir/src/parse.c.s
 
-CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o: ../src/path_creating.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o   -c /Users/sapril/lem_in_remastered/src/path_creating.c
-
-CMakeFiles/lem_in_remastered.dir/src/path_creating.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/path_creating.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/path_creating.c > CMakeFiles/lem_in_remastered.dir/src/path_creating.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/path_creating.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/path_creating.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/path_creating.c -o CMakeFiles/lem_in_remastered.dir/src/path_creating.c.s
-
-CMakeFiles/lem_in_remastered.dir/src/printing.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/printing.c.o: ../src/printing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/lem_in_remastered.dir/src/printing.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/printing.c.o   -c /Users/sapril/lem_in_remastered/src/printing.c
-
-CMakeFiles/lem_in_remastered.dir/src/printing.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/printing.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/printing.c > CMakeFiles/lem_in_remastered.dir/src/printing.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/printing.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/printing.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/printing.c -o CMakeFiles/lem_in_remastered.dir/src/printing.c.s
-
-CMakeFiles/lem_in_remastered.dir/src/printing2.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/printing2.c.o: ../src/printing2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/lem_in_remastered.dir/src/printing2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/printing2.c.o   -c /Users/sapril/lem_in_remastered/src/printing2.c
-
-CMakeFiles/lem_in_remastered.dir/src/printing2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/printing2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/printing2.c > CMakeFiles/lem_in_remastered.dir/src/printing2.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/printing2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/printing2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/printing2.c -o CMakeFiles/lem_in_remastered.dir/src/printing2.c.s
-
 CMakeFiles/lem_in_remastered.dir/src/queue.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/queue.c.o: ../src/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/lem_in_remastered.dir/src/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/lem_in_remastered.dir/src/queue.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/queue.c.o   -c /Users/sapril/lem_in_remastered/src/queue.c
 
 CMakeFiles/lem_in_remastered.dir/src/queue.c.i: cmake_force
@@ -863,35 +759,9 @@ CMakeFiles/lem_in_remastered.dir/src/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/queue.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/queue.c -o CMakeFiles/lem_in_remastered.dir/src/queue.c.s
 
-CMakeFiles/lem_in_remastered.dir/src/read_map.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/read_map.c.o: ../src/read_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/lem_in_remastered.dir/src/read_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/read_map.c.o   -c /Users/sapril/lem_in_remastered/src/read_map.c
-
-CMakeFiles/lem_in_remastered.dir/src/read_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/read_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/read_map.c > CMakeFiles/lem_in_remastered.dir/src/read_map.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/read_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/read_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/read_map.c -o CMakeFiles/lem_in_remastered.dir/src/read_map.c.s
-
-CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
-CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o: ../src/room_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o   -c /Users/sapril/lem_in_remastered/src/room_utils.c
-
-CMakeFiles/lem_in_remastered.dir/src/room_utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/room_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/room_utils.c > CMakeFiles/lem_in_remastered.dir/src/room_utils.c.i
-
-CMakeFiles/lem_in_remastered.dir/src/room_utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/room_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/room_utils.c -o CMakeFiles/lem_in_remastered.dir/src/room_utils.c.s
-
 CMakeFiles/lem_in_remastered.dir/src/validation.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/src/validation.c.o: ../src/validation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/lem_in_remastered.dir/src/validation.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/lem_in_remastered.dir/src/validation.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/validation.c.o   -c /Users/sapril/lem_in_remastered/src/validation.c
 
 CMakeFiles/lem_in_remastered.dir/src/validation.c.i: cmake_force
@@ -902,9 +772,87 @@ CMakeFiles/lem_in_remastered.dir/src/validation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/validation.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/validation.c -o CMakeFiles/lem_in_remastered.dir/src/validation.c.s
 
+CMakeFiles/lem_in_remastered.dir/src/printing.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
+CMakeFiles/lem_in_remastered.dir/src/printing.c.o: ../src/printing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/lem_in_remastered.dir/src/printing.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/printing.c.o   -c /Users/sapril/lem_in_remastered/src/printing.c
+
+CMakeFiles/lem_in_remastered.dir/src/printing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/printing.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/printing.c > CMakeFiles/lem_in_remastered.dir/src/printing.c.i
+
+CMakeFiles/lem_in_remastered.dir/src/printing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/printing.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/printing.c -o CMakeFiles/lem_in_remastered.dir/src/printing.c.s
+
+CMakeFiles/lem_in_remastered.dir/src/bfs.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
+CMakeFiles/lem_in_remastered.dir/src/bfs.c.o: ../src/bfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/lem_in_remastered.dir/src/bfs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/bfs.c.o   -c /Users/sapril/lem_in_remastered/src/bfs.c
+
+CMakeFiles/lem_in_remastered.dir/src/bfs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/bfs.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/bfs.c > CMakeFiles/lem_in_remastered.dir/src/bfs.c.i
+
+CMakeFiles/lem_in_remastered.dir/src/bfs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/bfs.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/bfs.c -o CMakeFiles/lem_in_remastered.dir/src/bfs.c.s
+
+CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
+CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o: ../src/link_optimization.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o   -c /Users/sapril/lem_in_remastered/src/link_optimization.c
+
+CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/link_optimization.c > CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i
+
+CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/link_optimization.c -o CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s
+
+CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
+CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o: ../src/get_real_links_connections.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o   -c /Users/sapril/lem_in_remastered/src/get_real_links_connections.c
+
+CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/get_real_links_connections.c > CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.i
+
+CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/get_real_links_connections.c -o CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.s
+
+CMakeFiles/lem_in_remastered.dir/src/form_path.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
+CMakeFiles/lem_in_remastered.dir/src/form_path.c.o: ../src/form_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/lem_in_remastered.dir/src/form_path.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/form_path.c.o   -c /Users/sapril/lem_in_remastered/src/form_path.c
+
+CMakeFiles/lem_in_remastered.dir/src/form_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/form_path.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/form_path.c > CMakeFiles/lem_in_remastered.dir/src/form_path.c.i
+
+CMakeFiles/lem_in_remastered.dir/src/form_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/form_path.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/form_path.c -o CMakeFiles/lem_in_remastered.dir/src/form_path.c.s
+
+CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
+CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o: ../src/launch_ants.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o   -c /Users/sapril/lem_in_remastered/src/launch_ants.c
+
+CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sapril/lem_in_remastered/src/launch_ants.c > CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.i
+
+CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sapril/lem_in_remastered/src/launch_ants.c -o CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.s
+
 CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o: CMakeFiles/lem_in_remastered.dir/flags.make
 CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o: ../libft/src/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o   -c /Users/sapril/lem_in_remastered/libft/src/get_next_line.c
 
 CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.i: cmake_force
@@ -963,25 +911,21 @@ lem_in_remastered_OBJECTS = \
 "CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_strtrim.c.o" \
 "CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_tolower.c.o" \
 "CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_toupper.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/ants.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/bfs.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/free_data.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/get_info.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/parse.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/printing.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/printing2.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/queue.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/read_map.c.o" \
-"CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o" \
 "CMakeFiles/lem_in_remastered.dir/src/validation.c.o" \
+"CMakeFiles/lem_in_remastered.dir/src/printing.c.o" \
+"CMakeFiles/lem_in_remastered.dir/src/bfs.c.o" \
+"CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o" \
+"CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o" \
+"CMakeFiles/lem_in_remastered.dir/src/form_path.c.o" \
+"CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o" \
 "CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o"
 
 # External object files for target lem_in_remastered
@@ -1033,30 +977,26 @@ lem_in_remastered: CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_strsub.c
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_strtrim.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_tolower.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/libft/src/ft_str/ft_toupper.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/ants.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/bfs.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/free_data.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/free_data2.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/get_info.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/hashmap.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/init_structs.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/lem_in.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/parse.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/printing.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/printing2.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/queue.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/read_map.c.o
-lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/validation.c.o
+lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/printing.c.o
+lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/bfs.c.o
+lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o
+lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o
+lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/form_path.c.o
+lem_in_remastered: CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.o
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/build.make
 lem_in_remastered: ../libft/libft.a
 lem_in_remastered: CMakeFiles/lem_in_remastered.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Linking C executable lem_in_remastered"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Linking C executable lem_in_remastered"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in_remastered.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

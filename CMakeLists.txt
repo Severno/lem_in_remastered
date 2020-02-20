@@ -50,25 +50,21 @@ add_executable(lem_in_remastered
         libft/src/ft_str/ft_strtrim.c
         libft/src/ft_str/ft_tolower.c
         libft/src/ft_str/ft_toupper.c
-        src/ants.c
-        src/bfs.c
         src/copy_lines.c
         src/free_data.c
         src/free_data2.c
-        src/get_info.c
-        src/handle_errors.c
         src/hashmap.c
         src/init_structs.c
         src/lem_in.c
-        src/link_optimization.c
         src/parse.c
-        src/path_creating.c
-        src/printing.c
-        src/printing2.c
         src/queue.c
-        src/read_map.c
-        src/room_utils.c
         src/validation.c
+        src/printing.c
+        src/bfs.c
+        src/link_optimization.c
+        src/get_real_links_connections.c
+        src/form_path.c
+        src/launch_ants.c
         libft/src/get_next_line.c
         )
 

@@ -122,16 +122,22 @@ void		enqueue(t_queue *queue, t_room *room)
 {
 	t_qnode *tmp;
 
-	if (!(tmp = queue_new_node(room)))
+	tmp = queue_new_node(room);
+	if (!tmp)
+	{
+		free(tmp);
 		return ;
+	}
 	if (!queue->rear && !queue->front)
 	{
 		queue->rear = tmp;
 		queue->front = tmp;
+//		free(tmp);
 		return ;
 	}
 	queue->rear->next = tmp;
 	queue->rear = tmp;
+//	free(tmp);
 }
 
 t_qnode		*dequeue(t_queue *queue)

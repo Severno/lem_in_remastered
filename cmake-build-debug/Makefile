@@ -1392,33 +1392,6 @@ libft/src/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/libft/src/get_next_line.c.s
 .PHONY : libft/src/get_next_line.c.s
 
-src/ants.o: src/ants.c.o
-
-.PHONY : src/ants.o
-
-# target to build an object file
-src/ants.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/ants.c.o
-.PHONY : src/ants.c.o
-
-src/ants.i: src/ants.c.i
-
-.PHONY : src/ants.i
-
-# target to preprocess a source file
-src/ants.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/ants.c.i
-.PHONY : src/ants.c.i
-
-src/ants.s: src/ants.c.s
-
-.PHONY : src/ants.s
-
-# target to generate assembly for a file
-src/ants.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/ants.c.s
-.PHONY : src/ants.c.s
-
 src/bfs.o: src/bfs.c.o
 
 .PHONY : src/bfs.o
@@ -1472,6 +1445,33 @@ src/copy_lines.s: src/copy_lines.c.s
 src/copy_lines.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.s
 .PHONY : src/copy_lines.c.s
+
+src/form_path.o: src/form_path.c.o
+
+.PHONY : src/form_path.o
+
+# target to build an object file
+src/form_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/form_path.c.o
+.PHONY : src/form_path.c.o
+
+src/form_path.i: src/form_path.c.i
+
+.PHONY : src/form_path.i
+
+# target to preprocess a source file
+src/form_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/form_path.c.i
+.PHONY : src/form_path.c.i
+
+src/form_path.s: src/form_path.c.s
+
+.PHONY : src/form_path.s
+
+# target to generate assembly for a file
+src/form_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/form_path.c.s
+.PHONY : src/form_path.c.s
 
 src/free_data.o: src/free_data.c.o
 
@@ -1527,59 +1527,32 @@ src/free_data2.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/free_data2.c.s
 .PHONY : src/free_data2.c.s
 
-src/get_info.o: src/get_info.c.o
+src/get_real_links_connections.o: src/get_real_links_connections.c.o
 
-.PHONY : src/get_info.o
-
-# target to build an object file
-src/get_info.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_info.c.o
-.PHONY : src/get_info.c.o
-
-src/get_info.i: src/get_info.c.i
-
-.PHONY : src/get_info.i
-
-# target to preprocess a source file
-src/get_info.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_info.c.i
-.PHONY : src/get_info.c.i
-
-src/get_info.s: src/get_info.c.s
-
-.PHONY : src/get_info.s
-
-# target to generate assembly for a file
-src/get_info.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_info.c.s
-.PHONY : src/get_info.c.s
-
-src/handle_errors.o: src/handle_errors.c.o
-
-.PHONY : src/handle_errors.o
+.PHONY : src/get_real_links_connections.o
 
 # target to build an object file
-src/handle_errors.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.o
-.PHONY : src/handle_errors.c.o
+src/get_real_links_connections.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.o
+.PHONY : src/get_real_links_connections.c.o
 
-src/handle_errors.i: src/handle_errors.c.i
+src/get_real_links_connections.i: src/get_real_links_connections.c.i
 
-.PHONY : src/handle_errors.i
+.PHONY : src/get_real_links_connections.i
 
 # target to preprocess a source file
-src/handle_errors.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.i
-.PHONY : src/handle_errors.c.i
+src/get_real_links_connections.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.i
+.PHONY : src/get_real_links_connections.c.i
 
-src/handle_errors.s: src/handle_errors.c.s
+src/get_real_links_connections.s: src/get_real_links_connections.c.s
 
-.PHONY : src/handle_errors.s
+.PHONY : src/get_real_links_connections.s
 
 # target to generate assembly for a file
-src/handle_errors.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/handle_errors.c.s
-.PHONY : src/handle_errors.c.s
+src/get_real_links_connections.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_real_links_connections.c.s
+.PHONY : src/get_real_links_connections.c.s
 
 src/hashmap.o: src/hashmap.c.o
 
@@ -1634,6 +1607,33 @@ src/init_structs.s: src/init_structs.c.s
 src/init_structs.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/init_structs.c.s
 .PHONY : src/init_structs.c.s
+
+src/launch_ants.o: src/launch_ants.c.o
+
+.PHONY : src/launch_ants.o
+
+# target to build an object file
+src/launch_ants.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.o
+.PHONY : src/launch_ants.c.o
+
+src/launch_ants.i: src/launch_ants.c.i
+
+.PHONY : src/launch_ants.i
+
+# target to preprocess a source file
+src/launch_ants.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.i
+.PHONY : src/launch_ants.c.i
+
+src/launch_ants.s: src/launch_ants.c.s
+
+.PHONY : src/launch_ants.s
+
+# target to generate assembly for a file
+src/launch_ants.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/launch_ants.c.s
+.PHONY : src/launch_ants.c.s
 
 src/lem_in.o: src/lem_in.c.o
 
@@ -1716,33 +1716,6 @@ src/parse.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/parse.c.s
 .PHONY : src/parse.c.s
 
-src/path_creating.o: src/path_creating.c.o
-
-.PHONY : src/path_creating.o
-
-# target to build an object file
-src/path_creating.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/path_creating.c.o
-.PHONY : src/path_creating.c.o
-
-src/path_creating.i: src/path_creating.c.i
-
-.PHONY : src/path_creating.i
-
-# target to preprocess a source file
-src/path_creating.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/path_creating.c.i
-.PHONY : src/path_creating.c.i
-
-src/path_creating.s: src/path_creating.c.s
-
-.PHONY : src/path_creating.s
-
-# target to generate assembly for a file
-src/path_creating.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/path_creating.c.s
-.PHONY : src/path_creating.c.s
-
 src/printing.o: src/printing.c.o
 
 .PHONY : src/printing.o
@@ -1770,33 +1743,6 @@ src/printing.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/printing.c.s
 .PHONY : src/printing.c.s
 
-src/printing2.o: src/printing2.c.o
-
-.PHONY : src/printing2.o
-
-# target to build an object file
-src/printing2.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/printing2.c.o
-.PHONY : src/printing2.c.o
-
-src/printing2.i: src/printing2.c.i
-
-.PHONY : src/printing2.i
-
-# target to preprocess a source file
-src/printing2.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/printing2.c.i
-.PHONY : src/printing2.c.i
-
-src/printing2.s: src/printing2.c.s
-
-.PHONY : src/printing2.s
-
-# target to generate assembly for a file
-src/printing2.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/printing2.c.s
-.PHONY : src/printing2.c.s
-
 src/queue.o: src/queue.c.o
 
 .PHONY : src/queue.o
@@ -1823,60 +1769,6 @@ src/queue.s: src/queue.c.s
 src/queue.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/queue.c.s
 .PHONY : src/queue.c.s
-
-src/read_map.o: src/read_map.c.o
-
-.PHONY : src/read_map.o
-
-# target to build an object file
-src/read_map.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/read_map.c.o
-.PHONY : src/read_map.c.o
-
-src/read_map.i: src/read_map.c.i
-
-.PHONY : src/read_map.i
-
-# target to preprocess a source file
-src/read_map.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/read_map.c.i
-.PHONY : src/read_map.c.i
-
-src/read_map.s: src/read_map.c.s
-
-.PHONY : src/read_map.s
-
-# target to generate assembly for a file
-src/read_map.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/read_map.c.s
-.PHONY : src/read_map.c.s
-
-src/room_utils.o: src/room_utils.c.o
-
-.PHONY : src/room_utils.o
-
-# target to build an object file
-src/room_utils.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/room_utils.c.o
-.PHONY : src/room_utils.c.o
-
-src/room_utils.i: src/room_utils.c.i
-
-.PHONY : src/room_utils.i
-
-# target to preprocess a source file
-src/room_utils.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/room_utils.c.i
-.PHONY : src/room_utils.c.i
-
-src/room_utils.s: src/room_utils.c.s
-
-.PHONY : src/room_utils.s
-
-# target to generate assembly for a file
-src/room_utils.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/room_utils.c.s
-.PHONY : src/room_utils.c.s
 
 src/validation.o: src/validation.c.o
 
@@ -2055,33 +1947,33 @@ help:
 	@echo "... libft/src/get_next_line.o"
 	@echo "... libft/src/get_next_line.i"
 	@echo "... libft/src/get_next_line.s"
-	@echo "... src/ants.o"
-	@echo "... src/ants.i"
-	@echo "... src/ants.s"
 	@echo "... src/bfs.o"
 	@echo "... src/bfs.i"
 	@echo "... src/bfs.s"
 	@echo "... src/copy_lines.o"
 	@echo "... src/copy_lines.i"
 	@echo "... src/copy_lines.s"
+	@echo "... src/form_path.o"
+	@echo "... src/form_path.i"
+	@echo "... src/form_path.s"
 	@echo "... src/free_data.o"
 	@echo "... src/free_data.i"
 	@echo "... src/free_data.s"
 	@echo "... src/free_data2.o"
 	@echo "... src/free_data2.i"
 	@echo "... src/free_data2.s"
-	@echo "... src/get_info.o"
-	@echo "... src/get_info.i"
-	@echo "... src/get_info.s"
-	@echo "... src/handle_errors.o"
-	@echo "... src/handle_errors.i"
-	@echo "... src/handle_errors.s"
+	@echo "... src/get_real_links_connections.o"
+	@echo "... src/get_real_links_connections.i"
+	@echo "... src/get_real_links_connections.s"
 	@echo "... src/hashmap.o"
 	@echo "... src/hashmap.i"
 	@echo "... src/hashmap.s"
 	@echo "... src/init_structs.o"
 	@echo "... src/init_structs.i"
 	@echo "... src/init_structs.s"
+	@echo "... src/launch_ants.o"
+	@echo "... src/launch_ants.i"
+	@echo "... src/launch_ants.s"
 	@echo "... src/lem_in.o"
 	@echo "... src/lem_in.i"
 	@echo "... src/lem_in.s"
@@ -2091,24 +1983,12 @@ help:
 	@echo "... src/parse.o"
 	@echo "... src/parse.i"
 	@echo "... src/parse.s"
-	@echo "... src/path_creating.o"
-	@echo "... src/path_creating.i"
-	@echo "... src/path_creating.s"
 	@echo "... src/printing.o"
 	@echo "... src/printing.i"
 	@echo "... src/printing.s"
-	@echo "... src/printing2.o"
-	@echo "... src/printing2.i"
-	@echo "... src/printing2.s"
 	@echo "... src/queue.o"
 	@echo "... src/queue.i"
 	@echo "... src/queue.s"
-	@echo "... src/read_map.o"
-	@echo "... src/read_map.i"
-	@echo "... src/read_map.s"
-	@echo "... src/room_utils.o"
-	@echo "... src/room_utils.i"
-	@echo "... src/room_utils.s"
 	@echo "... src/validation.o"
 	@echo "... src/validation.i"
 	@echo "... src/validation.s"

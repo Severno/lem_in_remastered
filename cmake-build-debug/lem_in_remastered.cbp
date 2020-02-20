@@ -221,13 +221,13 @@
 		<Unit filename="/Users/sapril/lem_in_remastered/libft/src/get_next_line.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/ants.c">
-			<Option target="lem_in_remastered"/>
-		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/bfs.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/copy_lines.c">
+			<Option target="lem_in_remastered"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_remastered/src/form_path.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/free_data.c">
@@ -236,16 +236,16 @@
 		<Unit filename="/Users/sapril/lem_in_remastered/src/free_data2.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/get_info.c">
-			<Option target="lem_in_remastered"/>
-		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/handle_errors.c">
+		<Unit filename="/Users/sapril/lem_in_remastered/src/get_real_links_connections.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/hashmap.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/init_structs.c">
+			<Option target="lem_in_remastered"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_remastered/src/launch_ants.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/lem_in.c">
@@ -257,22 +257,10 @@
 		<Unit filename="/Users/sapril/lem_in_remastered/src/parse.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/path_creating.c">
-			<Option target="lem_in_remastered"/>
-		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/printing.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/printing2.c">
-			<Option target="lem_in_remastered"/>
-		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/queue.c">
-			<Option target="lem_in_remastered"/>
-		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/read_map.c">
-			<Option target="lem_in_remastered"/>
-		</Unit>
-		<Unit filename="/Users/sapril/lem_in_remastered/src/room_utils.c">
 			<Option target="lem_in_remastered"/>
 		</Unit>
 		<Unit filename="/Users/sapril/lem_in_remastered/src/validation.c">

@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 11:16:29 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/05 13:00:03 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/20 22:11:27 by sapril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,17 @@ void 			free_entries(t_lem **lem, int i)
 	t_entry	*entry;
 	char	**in_links;
 	char	**out_links;
+	char	**links;
 
 	if ((*lem)->ht->entries[i])
 	{
 		entry = (*lem)->ht->entries[i];
 		if (entry->value)
 		{
-			in_links = entry->value->in_link;
-			out_links = entry->value->out_link;
-			free_str_links(&in_links, &out_links);
+			in_links = entry->value->in_links;
+			out_links = entry->value->out_links;
+			links = entry->value->links;
+			free_str_links(&in_links, &out_links, &links);
 			free_entry(&entry);
 //			ft_printf("freed rooms = %d\n", ++freed_rooms);
 		}
@@ -61,7 +63,6 @@ void			free_lem(t_lem **lem)
 
 	(*lem)->ht->entries ? free((*lem)->ht->entries) : 0;
 	(*lem)->ht ? free((*lem)->ht) : 0;
-	(*lem)->names ? free((*lem)->names) : 0;
 	(*lem)->end ? free((*lem)->end) : 0;
 	(*lem)->start ? free((*lem)->start) : 0;
 	(*lem) ? free((*lem)) : 0;

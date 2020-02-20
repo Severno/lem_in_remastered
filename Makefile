@@ -20,12 +20,10 @@ CYAN_IN:=\033[1;36m
 WHITE_IN:=\033[1;37m
 # ==================
 
-FILES = bfs free_data free_data2 get_info \
-        hashmap lem_in link_optimization printing \
-        queue read_map validation room_utils \
-        ants init_structs handle_errors path_creating \
-        copy_lines parse
-
+FILES = copy_lines free_data free_data2 hashmap \
+		init_structs lem_in parse queue validation \
+		printing bfs link_optimization get_real_links_connections \
+		form_path launch_ants
 
 FILES_LEM_IN= $(filter-out checker, $(FILES))
 OBJ_LEM_IN=$(addprefix $(OBJ_PATH), $(addsuffix .o, $(FILES_LEM_IN)))
