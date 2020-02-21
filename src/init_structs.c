@@ -6,18 +6,33 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 08:34:20 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/19 16:47:59 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/21 16:42:40 by sapril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/lem_in.h"
 
+void create_links(t_room *new_room)
+{	int i;
+
+	i = 0;
+	new_room->in_links = ft_memalloc(sizeof(char *) * MIN_LINKS);
+	new_room->out_links = ft_memalloc(sizeof(char *) * MIN_LINKS);
+	new_room->links = ft_memalloc(sizeof(char *) * (MIN_LINKS + MIN_LINKS));
+	while (i < MIN_LINKS)
+		new_room->out_links[i++] = ft_strnew(sizeof(char) * 100);
+	i = 0;
+	while (i < MIN_LINKS)
+		new_room->in_links[i++] = ft_strnew(sizeof(char) * 100);
+	i = 0;
+	while (i < (MIN_LINKS + MIN_LINKS))
+		new_room->links[i++] = ft_strnew(sizeof(char) * 100);
+}
+
 t_room *create_room(char **name, int x, int y)
 {
 	t_room	*new_room;
-	int i;
 
-	i = 0;
 	new_room = ft_memalloc(sizeof(t_room));
 	new_room->name = ft_strnew(ft_strlen(*name));
 	new_room->name = ft_strcpy(new_room->name, *name);
@@ -29,17 +44,7 @@ t_room *create_room(char **name, int x, int y)
 	new_room->bfs_lvl = -1;
 	new_room->visited = 0;
 	new_room->links_degree = 0;
-	new_room->in_links = ft_memalloc(sizeof(char *) * MIN_LINKS);
-	new_room->out_links = ft_memalloc(sizeof(char *) * MIN_LINKS);
-	new_room->links = ft_memalloc(sizeof(char *) * MIN_LINKS + MIN_LINKS);
-	while (i < MIN_LINKS)
-		new_room->out_links[i++] = ft_strnew(sizeof(char) * 100);
-	i = 0;
-	while (i < MIN_LINKS)
-		new_room->in_links[i++] = ft_strnew(sizeof(char) * 100);
-	i = 0;
-	while (i < MIN_LINKS + MIN_LINKS)
-		new_room->links[i++] = ft_strnew(sizeof(char) * 100);
+	create_links(new_room);
 	return (new_room);
 }
 

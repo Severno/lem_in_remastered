@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 18:13:14 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/20 22:22:10 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/21 16:52:57 by sapril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -358,101 +358,300 @@ void reverse_bfs_set_lel(t_lem *lem, t_room *start, char *end)
 void delete_cur_output_link(t_room *curr_room, t_lem *lem)
 {
 	int		real_out_links;
-	int		curr_out_degree;
-	t_room *deciding_room;
-	int min_bfs_lvl;
-	int		out_delete_pos;
-	int		in_delete_pos;
+	int		out_degr;
+	t_room	*deciding_room;
 
 	real_out_links = get_real_out_links(lem, curr_room);
-	curr_out_degree = 0;
-	min_bfs_lvl = MAX_INTEGER;
-//	print_rooms_out_in(lem);
-	if (real_out_links > 1 && !ft_strequ(curr_room->name, lem->start))
+	out_degr = 0;
+	if (real_out_links >= 2)
 	{
-		reverse_bfs_set_lel(lem, ht_get(lem->ht, lem->end), curr_room->name);
-		if (curr_room->out_links[curr_out_degree] != NULL && curr_room->out_links[curr_out_degree][0] != '\0')
-			min_bfs_lvl = ht_get(lem->ht, curr_room->out_links[curr_out_degree])->bfs_lvl;
-		while (curr_out_degree < curr_room->out_degree)
+		while (out_degr < curr_room->out_degree)
 		{
-			deciding_room = ht_get(lem->ht, curr_room->out_links[curr_out_degree]);
-			if (curr_room->out_links[curr_out_degree] != NULL && curr_room->out_links[curr_out_degree][0] != '\0')
+			deciding_room = ht_get(lem->ht, curr_room->out_links[out_degr]);
+			if (deciding_room && deciding_room->name)
 			{
-				if ((deciding_room->bfs_lvl) < min_bfs_lvl)
-					min_bfs_lvl = deciding_room->bfs_lvl;
+
 			}
-			curr_out_degree++;
-		}
-		curr_out_degree = 0;
-		while (curr_out_degree < curr_room->out_degree)
-		{
-			deciding_room = ht_get(lem->ht, curr_room->out_links[curr_out_degree]);
-			if (curr_room->out_links[curr_out_degree] != NULL && curr_room->out_links[curr_out_degree][0] != '\0')
-			{
-				real_out_links = get_real_out_links(lem, curr_room);
-				if ((deciding_room->bfs_lvl) >= min_bfs_lvl && deciding_room->visited == 0)
-				{
-					out_delete_pos = get_pos_link_out(curr_room->out_links, deciding_room->name, curr_room->out_degree);
-					in_delete_pos = get_pos_link_in(deciding_room->in_links, curr_room->name, deciding_room->in_degree);
-					delete_current_link_out_in(curr_room, deciding_room, out_delete_pos, in_delete_pos);
-					curr_out_degree++;
-					continue;
-				}
-				if ((deciding_room->bfs_lvl) >= min_bfs_lvl && real_out_links >= 2 && deciding_room->visited == 1)
-				{
-					out_delete_pos = get_pos_link_out(curr_room->out_links, deciding_room->name, curr_room->out_degree);
-					in_delete_pos = get_pos_link_in(deciding_room->in_links, curr_room->name, deciding_room->in_degree);
-					delete_current_link_out_in(curr_room, deciding_room, out_delete_pos, in_delete_pos);
-				}
-			}
-//			print_rooms_out_in(lem);
-			curr_out_degree++;
+			out_degr++;
 		}
 	}
 }
 
-void	delete_output_links(t_lem *lem, t_room *start)
+
+
+void set_shortest_path_bfs_lvl(t_lem *lem, t_qnode *current, int	i, char *end)
+{
+	t_room *curr_room;
+
+	curr_room = ht_get(lem->ht, current->room->out_links[i]);
+	if (curr_room == NULL)
+		return;
+	curr_room->bfs_lvl = -1;
+	if (ft_strequ(curr_room->name, end))
+		curr_room->bfs_lvl = MAX_INTEGER;
+	if (!ft_strequ(current->room->name, end))
+		curr_room->bfs_lvl = current->room->bfs_lvl + 1;
+}
+
+void set_shortest_path_reverse_bfs_lvl(t_lem *lem, t_qnode *current, int i, char *end)
+{
+	t_room *curr_room;
+
+	curr_room = ht_get(lem->ht, current->room->in_links[i]);
+	if (curr_room == NULL)
+		return;
+	curr_room->bfs_lvl = -1;
+	if (ft_strequ(curr_room->name, end))
+		curr_room->bfs_lvl = MAX_INTEGER;
+	if (!ft_strequ(current->room->name, end))
+		curr_room->bfs_lvl = current->room->bfs_lvl + 1;
+}
+
+void		find_shortest_path(t_lem *lem, t_room *start, char *end)
 {
 	t_ht	*seen;
+	t_ht	*deciding_paths;
 	t_queue	*queue;
 	t_qnode *current;
-	int		out_degree;
+	int i;
 
-	out_degree = 0;
 	seen = create_seen();
+	deciding_paths = create_seen();
 	queue = queue_create();
+	i = 0;
 	enqueue(queue, start);
 	start->bfs_lvl = 0;
 	while (queue->front)
 	{
-//		print_queue(queue);
-//		print_ht_seen(seen);
 		current = dequeue(queue);
-		if (!current || !current->room)
+		if (current == NULL || current->room == NULL)
+			continue;
+		if (!current->room->name)
+			continue;
+		print_queue(queue);
+		print_ht_seen(seen);
+//		ft_printf(BLUE"Current working %s \n"RESET, current->room->name);
+//		ft_printf("Current node = %s, bfs_lvl = %d\n", current->room->name, current->room->bfs_lvl);
+
+		if (!ht_get(seen, current->room->name))
+		{
+			ht_set(seen, current->room->name, &current->room);
+			while (i < current->room->out_degree)
+			{
+				if (ft_strequ(current->room->out_links[i], lem->end) && !ht_get(deciding_paths, current->room->name))
+				{
+					ht_set(deciding_paths, current->room->name, &current->room);
+				}
+				set_shortest_path_bfs_lvl(lem, current, i, end);
+				if (!ht_get(seen, current->room->out_links[i])) // если его нет в просмотренном добавляем в очередь
+					enqueue(queue, ht_get(lem->ht, current->room->out_links[i]));
+//				print_queue(queue);
+//				print_ht_seen(seen);
+				i++;
+			}
+		}
+//		ft_printf("\n");
+		free(current);
+		i = 0;
+	}
+	delete_deciding_rooms(lem, deciding_paths, ht_get(lem->ht, lem->end), start->name);
+	free(queue);
+	free_seen(&seen);
+//	free_seen(&deciding_paths);
+}
+// Если оставлись еще ссылки после удаления кроме той, которая была на выходе - удалить все остальные
+void	delete_output_links(t_lem *lem, t_ht *deciding_end_paths, t_room *end)
+{
+	int out_degr;
+	int out_degr_check;
+	int min_bfs;
+	int delete_link;
+	int out_delete_pos;
+	int in_delete_pos;
+	int real_out_links;
+	t_room *deciding_room;
+
+	out_degr = 0;
+	out_degr_check = 0;
+	min_bfs = MAX_INTEGER;
+	delete_link = 1;
+	// DELETE DEAD END LINKS
+	while (out_degr < end->out_degree)
+	{
+		deciding_room = ht_get(deciding_end_paths, end->out_links[out_degr]);
+		if (deciding_room)
+		{
+			while (out_degr_check < end->out_degree)
+			{
+				if (ft_strequ(end->out_links[out_degr_check], deciding_room->name))
+				{
+					delete_link = 0;
+					break;
+				}
+				out_degr_check++;
+			}
+			if (delete_link)
+			{
+				out_delete_pos = get_pos_link_out(end->out_links, deciding_room->name, end->out_degree);
+				in_delete_pos = get_pos_link_in(deciding_room->in_links, end->name, deciding_room->in_degree);
+				delete_current_link(end, deciding_room, out_delete_pos, in_delete_pos);
+			}
+		}
+		out_degr_check = 0;
+		out_degr++;
+	}
+	// GET MIN_BFS deciding_end_paths
+	out_degr = 0;
+	while (out_degr < end->out_degree)
+	{
+		deciding_room = ht_get(deciding_end_paths, end->out_links[out_degr]);
+		if (deciding_room)
+		{
+			if (deciding_room->bfs_lvl < min_bfs)
+				min_bfs = deciding_room->bfs_lvl;
+		}
+		out_degr++;
+	}
+	out_degr = 0;
+	// DELETE deciding_end_paths
+	while (out_degr < end->out_degree)
+	{
+		deciding_room = ht_get(deciding_end_paths, end->out_links[out_degr]);
+		if (deciding_room)
+		{
+			real_out_links = get_real_out_links(lem, end);
+			if (deciding_room->bfs_lvl >= min_bfs && real_out_links >= 2)
+			{
+				out_delete_pos = get_pos_link_out(end->out_links, deciding_room->name, end->out_degree);
+				in_delete_pos = get_pos_link_in(deciding_room->in_links, end->name, deciding_room->in_degree);
+				delete_current_link_out_in(end, deciding_room, out_delete_pos, in_delete_pos);
+			}
+		}
+		out_degr++;
+	}
+}
+
+void delete_deciding_rooms(t_lem *lem, t_ht *deciding_paths, t_room *start, char *end)
+{
+	t_ht	*seen;
+	t_ht	*deciding_end_paths;
+	t_queue	*queue;
+	t_qnode *current;
+	int i;
+
+	seen = create_seen();
+	deciding_end_paths = create_seen();
+	queue = queue_create();
+	i = 0;
+	enqueue(queue, start);
+	start->bfs_lvl = 0;
+	while (queue->front)
+	{
+		current = dequeue(queue);
+		if (current == NULL || current->room == NULL)
+			continue;
+		if (!current->room->name)
 			continue;
 //		print_queue(queue);
 //		print_ht_seen(seen);
 //		ft_printf(BLUE"Current working %s \n"RESET, current->room->name);
-		if (!ht_get(seen, current->room->name)) // проверяем есть ли в просмотренных
+//		ft_printf("Current node = %s, bfs_lvl = %d\n", current->room->name, current->room->bfs_lvl);
+
+		if (!ht_get(seen, current->room->name))
 		{
-			ht_set(seen, current->room->name, &current->room); // если нет, добавляем в просмотренные
-//			ft_printf("Current node = %s, bfs_lvl = %d\n", current->room->name, current->room->bfs_lvl);
-			while (out_degree < current->room->out_degree) // смотрим все исходящие ссылки из текущий комнаты
+			ht_set(seen, current->room->name, &current->room);
+			if (ft_strequ(current->room->name, end))
 			{
-				if (ht_get(lem->ht, current->room->out_links[out_degree]) != NULL)
+				free(current);
+				i = 0;
+				continue;
+			}
+			if (ft_strequ(lem->end, current->room->name))
+			{
+				while (i < current->room->in_degree)
 				{
-					delete_cur_output_link(current->room,  lem);
-					if (!ht_get(seen, current->room->out_links[out_degree]))
-						enqueue(queue, ht_get(lem->ht, current->room->out_links[out_degree]));
+					if (ht_get(deciding_paths, current->room->in_links[i]))
+					{
+						set_shortest_path_reverse_bfs_lvl(lem, current, i, end);
+						if (!ht_get(seen, current->room->in_links[i])) // если его нет в просмотренном добавляем в очередь
+							enqueue(queue, ht_get(lem->ht, current->room->in_links[i]));
+//				print_queue(queue);
+//				print_ht_seen(seen);
+					}
+					i++;
 				}
-				out_degree++;
+			}
+			while (i < current->room->in_degree)
+			{
+				if (ft_strequ(current->room->in_links[i], end))
+					ht_set(deciding_end_paths, current->room->name, &current->room);
+				set_shortest_path_reverse_bfs_lvl(lem, current, i, end);
+				if (!ht_get(seen, current->room->in_links[i])) // если его нет в просмотренном добавляем в очередь
+					enqueue(queue, ht_get(lem->ht, current->room->in_links[i]));
+//				print_queue(queue);
+//				print_ht_seen(seen);
+				i++;
 			}
 		}
+//		ft_printf("\n");
+		free(current);
+		i = 0;
+	}
+	delete_output_links(lem, deciding_end_paths, ht_get(lem->ht, end));
+	free(queue);
+	free_seen(&seen);
+	free_seen(&deciding_paths);
+}
+
+void delete_out_links(t_lem *lem, t_room *start)
+{
+	t_ht	*seen;
+	t_ht	*deciding_paths;
+	t_queue	*queue;
+	t_qnode *current;
+	int i;
+	int real_out_links;
+
+	seen = create_seen();
+	deciding_paths = create_seen();
+	queue = queue_create();
+	i = 0;
+	enqueue(queue, start);
+	start->bfs_lvl = 0;
+	while (queue->front)
+	{
+		current = dequeue(queue);
+		if (current == NULL || current->room == NULL)
+			continue;
+		if (!current->room->name)
+			continue;
 //		print_queue(queue);
 //		print_ht_seen(seen);
+//		ft_printf(BLUE"Current working %s \n"RESET, current->room->name);
+//		ft_printf("Current node = %s, bfs_lvl = %d\n", current->room->name, current->room->bfs_lvl);
+
+		if (!ht_get(seen, current->room->name))
+		{
+			ht_set(seen, current->room->name, &current->room);
+			while (i < current->room->out_degree)
+			{
+				real_out_links = get_real_out_links(lem, current->room);
+				if (real_out_links >= 2 && !ft_strequ(current->room->name, lem->start))
+				{
+					find_shortest_path(lem, current->room, lem->end);
+				}
+				if (!ht_get(seen, current->room->out_links[i])) // если его нет в просмотренном добавляем в очередь
+					enqueue(queue, ht_get(lem->ht, current->room->out_links[i]));
+//				print_queue(queue);
+//				print_ht_seen(seen);
+				i++;
+			}
+		}
+//		ft_printf("\n");
 		free(current);
-		out_degree = 0;
+		i = 0;
 	}
+	delete_deciding_rooms(lem, deciding_paths, ht_get(lem->ht, lem->end), start->name);
 	free(queue);
 	free_seen(&seen);
 }

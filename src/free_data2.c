@@ -48,7 +48,7 @@ void			free_str_links(char ***in_links, char ***out_links, char ***links)
 //		freed_out++;
 	}
 	i = 0;
-	while (i < MIN_LINKS)
+	while (i < MIN_LINKS + MIN_LINKS)
 	{
 
 		free((*links)[i++]);

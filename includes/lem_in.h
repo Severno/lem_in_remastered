@@ -227,6 +227,8 @@ void				bfs_set_lvl(t_lem *lem, t_room *start, char *end);
 void				reverse_set_bfs_lvl(t_lem *lem, t_qnode *current, int	in_degree, char *end);
 void				reverse_bfs_set_lel(t_lem *lem, t_room *start, char *end);
 void				align_links(t_lem *lem, t_room *start);
+void				set_shortest_path_bfs_lvl(t_lem *lem, t_qnode *current, int	i, char *end);
+void				find_shortest_path(t_lem *lem, t_room *start, char *end);
 /*
 	link_optimization
 */
@@ -237,11 +239,12 @@ void				delete_current_link(t_room *from, t_room *to, int out_pos, int in_pos);
 void				delete_useless_links(t_lem *lem, t_room *start);
 void				delete_input_links(t_lem *lem, t_room *start);
 void				delete_cur_output_link(t_room *curr_room, t_lem *lem);
-void				delete_output_links(t_lem *lem, t_room *start);
 void				remove_dead_link(t_lem *lem, t_room *dead_room);
 int					get_pos_link_out(char **out_links, char *in_link, int out_degree);
 void				delete_cur_input_link(t_room *curr_room, t_lem *lem);
 void				delete_input_links(t_lem *lem, t_room *start);
+void				delete_deciding_rooms(t_lem *lem, t_ht *deciding_paths, t_room *start, char *end);
+void				delete_out_links(t_lem *lem, t_room *start);
 /*
 	printing
 */
@@ -297,7 +300,9 @@ void				launch_ants(t_lem *lem, t_room *start, int ants);
 /*
 	init structs
  */
+void				create_links(t_room *new_room);
 t_room				*create_room(char **name, int x, int y);
+t_concat			*create_concat();
 t_lem				*create_lem_in();
 
 /*

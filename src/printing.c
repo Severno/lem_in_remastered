@@ -78,6 +78,7 @@ void print_rooms_out_in(t_lem *lem)
 	{
 		if (lem->ht->entries[i])
 		{
+			ft_printf("IN\n");
 			ft_printf(RED"----Root NAME = %s, X = %d, Y = %d ----\n"RESET, lem->ht->entries[i]->value->name, lem->ht->entries[i]->value->coord_x, lem->ht->entries[i]->value->coord_y);
 			while (out_degree < lem->ht->entries[i]->value->out_degree)
 			{

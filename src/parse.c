@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 14:05:13 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/20 20:05:48 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/21 16:44:29 by sapril           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,17 @@ int parse(t_lem *lem)
 			else if (is_end_or_start(lem, split_str, &lines))
 				parse_end_or_start(lem, &lines, split_str);
 			else if (is_room(lem, split_str, &lines))
+			{
 				parse_rooms(lem, &lines, split_str);
+			}
 			else if (ft_strchr(lines, '-') && split_str[1] == NULL && is_link(lem, split_str, &lines))
+			{
 				parse_links(lem, &lines, split_str);
+			}
 			else
 				free_line_info(&split_str, &lines);
 	}
+
 	if (lem->ants <= -1)
 		terminate(&lem, INCORRECT_ANTS);
 	return (1);
@@ -94,11 +99,15 @@ int parse_end_or_start(t_lem *lem, char **lines, char **split_str)
 int parse_rooms(t_lem *lem, char **lines, char **split_str)
 {
 	t_room	*new_room;
+	(void)lines;
+	(void)split_str;
+	(void)new_room;
 
 	new_room = create_room(&split_str[0], ft_atoi(split_str[1]), ft_atoi(split_str[2]));
 	ht_set(lem->ht, split_str[0], &new_room);
 	lem->rooms_cap++;
-	free_line_info(&split_str, lines);
+//	ft_printf("Rooms created = %d\n", lem->rooms_cap);
+//	free_line_info(&split_str, lines);
 	return (1);
 }
 

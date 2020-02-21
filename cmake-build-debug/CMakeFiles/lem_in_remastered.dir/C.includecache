@@ -46,39 +46,7 @@ sys/errno.h
 libft.h
 /Users/sapril/lem_in_remastered/libft/includes/libft.h
 
-/Users/sapril/lem_in_remastered/src/bfs.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/copy_lines.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/form_path.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/free_data.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/free_data2.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/get_real_links_connections.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/hashmap.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
 /Users/sapril/lem_in_remastered/src/init_structs.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/launch_ants.c
 ../includes/lem_in.h
 /Users/sapril/lem_in_remastered/includes/lem_in.h
 
@@ -86,23 +54,7 @@ libft.h
 ../includes/lem_in.h
 /Users/sapril/lem_in_remastered/includes/lem_in.h
 
-/Users/sapril/lem_in_remastered/src/link_optimization.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
 /Users/sapril/lem_in_remastered/src/parse.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/printing.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/queue.c
-../includes/lem_in.h
-/Users/sapril/lem_in_remastered/includes/lem_in.h
-
-/Users/sapril/lem_in_remastered/src/validation.c
 ../includes/lem_in.h
 /Users/sapril/lem_in_remastered/includes/lem_in.h
 
