@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 14:05:13 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/21 16:44:29 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/23 13:58:36 by artembykov       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,6 +127,7 @@ int parse_links(t_lem *lem, char **lines, char **split_str)
 	int biggest_delimeter;
 
 	(void)lines;
+//	lem->link_con = ft_memalloc(sizeof(int *) * lem->rooms_cap);
 	link_str = split_str[0];
 	biggest_delimeter = get_biggest_delimeter(lem, link_str, ft_strlen(link_str));
 	link1_str = lem_strdub(link_str, get_biggest_delimeter(lem, link_str, ft_strlen(link_str)));

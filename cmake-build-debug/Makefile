@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sapril/lem_in_remastered
+CMAKE_SOURCE_DIR = /Users/artembykov/lem_in_remastered
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sapril/lem_in_remastered/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/artembykov/lem_in_remastered/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles /Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artembykov/lem_in_remastered/cmake-build-debug/CMakeFiles /Users/artembykov/lem_in_remastered/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sapril/lem_in_remastered/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/artembykov/lem_in_remastered/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1419,6 +1419,33 @@ src/bfs.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/bfs.c.s
 .PHONY : src/bfs.c.s
 
+src/check_path.o: src/check_path.c.o
+
+.PHONY : src/check_path.o
+
+# target to build an object file
+src/check_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/check_path.c.o
+.PHONY : src/check_path.c.o
+
+src/check_path.i: src/check_path.c.i
+
+.PHONY : src/check_path.i
+
+# target to preprocess a source file
+src/check_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/check_path.c.i
+.PHONY : src/check_path.c.i
+
+src/check_path.s: src/check_path.c.s
+
+.PHONY : src/check_path.s
+
+# target to generate assembly for a file
+src/check_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/check_path.c.s
+.PHONY : src/check_path.c.s
+
 src/copy_lines.o: src/copy_lines.c.o
 
 .PHONY : src/copy_lines.o
@@ -1445,6 +1472,114 @@ src/copy_lines.s: src/copy_lines.c.s
 src/copy_lines.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.s
 .PHONY : src/copy_lines.c.s
+
+src/create_in_out_links.o: src/create_in_out_links.c.o
+
+.PHONY : src/create_in_out_links.o
+
+# target to build an object file
+src/create_in_out_links.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/create_in_out_links.c.o
+.PHONY : src/create_in_out_links.c.o
+
+src/create_in_out_links.i: src/create_in_out_links.c.i
+
+.PHONY : src/create_in_out_links.i
+
+# target to preprocess a source file
+src/create_in_out_links.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/create_in_out_links.c.i
+.PHONY : src/create_in_out_links.c.i
+
+src/create_in_out_links.s: src/create_in_out_links.c.s
+
+.PHONY : src/create_in_out_links.s
+
+# target to generate assembly for a file
+src/create_in_out_links.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/create_in_out_links.c.s
+.PHONY : src/create_in_out_links.c.s
+
+src/delete_dead_links.o: src/delete_dead_links.c.o
+
+.PHONY : src/delete_dead_links.o
+
+# target to build an object file
+src/delete_dead_links.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o
+.PHONY : src/delete_dead_links.c.o
+
+src/delete_dead_links.i: src/delete_dead_links.c.i
+
+.PHONY : src/delete_dead_links.i
+
+# target to preprocess a source file
+src/delete_dead_links.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.i
+.PHONY : src/delete_dead_links.c.i
+
+src/delete_dead_links.s: src/delete_dead_links.c.s
+
+.PHONY : src/delete_dead_links.s
+
+# target to generate assembly for a file
+src/delete_dead_links.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.s
+.PHONY : src/delete_dead_links.c.s
+
+src/delete_input_links.o: src/delete_input_links.c.o
+
+.PHONY : src/delete_input_links.o
+
+# target to build an object file
+src/delete_input_links.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o
+.PHONY : src/delete_input_links.c.o
+
+src/delete_input_links.i: src/delete_input_links.c.i
+
+.PHONY : src/delete_input_links.i
+
+# target to preprocess a source file
+src/delete_input_links.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.i
+.PHONY : src/delete_input_links.c.i
+
+src/delete_input_links.s: src/delete_input_links.c.s
+
+.PHONY : src/delete_input_links.s
+
+# target to generate assembly for a file
+src/delete_input_links.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.s
+.PHONY : src/delete_input_links.c.s
+
+src/delete_output_links.o: src/delete_output_links.c.o
+
+.PHONY : src/delete_output_links.o
+
+# target to build an object file
+src/delete_output_links.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o
+.PHONY : src/delete_output_links.c.o
+
+src/delete_output_links.i: src/delete_output_links.c.i
+
+.PHONY : src/delete_output_links.i
+
+# target to preprocess a source file
+src/delete_output_links.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.i
+.PHONY : src/delete_output_links.c.i
+
+src/delete_output_links.s: src/delete_output_links.c.s
+
+.PHONY : src/delete_output_links.s
+
+# target to generate assembly for a file
+src/delete_output_links.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.s
+.PHONY : src/delete_output_links.c.s
 
 src/form_path.o: src/form_path.c.o
 
@@ -1526,6 +1661,33 @@ src/free_data2.s: src/free_data2.c.s
 src/free_data2.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/free_data2.c.s
 .PHONY : src/free_data2.c.s
+
+src/get_links_position.o: src/get_links_position.c.o
+
+.PHONY : src/get_links_position.o
+
+# target to build an object file
+src/get_links_position.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_links_position.c.o
+.PHONY : src/get_links_position.c.o
+
+src/get_links_position.i: src/get_links_position.c.i
+
+.PHONY : src/get_links_position.i
+
+# target to preprocess a source file
+src/get_links_position.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_links_position.c.i
+.PHONY : src/get_links_position.c.i
+
+src/get_links_position.s: src/get_links_position.c.s
+
+.PHONY : src/get_links_position.s
+
+# target to generate assembly for a file
+src/get_links_position.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/get_links_position.c.s
+.PHONY : src/get_links_position.c.s
 
 src/get_real_links_connections.o: src/get_real_links_connections.c.o
 
@@ -1661,33 +1823,6 @@ src/lem_in.s: src/lem_in.c.s
 src/lem_in.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/lem_in.c.s
 .PHONY : src/lem_in.c.s
-
-src/link_optimization.o: src/link_optimization.c.o
-
-.PHONY : src/link_optimization.o
-
-# target to build an object file
-src/link_optimization.c.o:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.o
-.PHONY : src/link_optimization.c.o
-
-src/link_optimization.i: src/link_optimization.c.i
-
-.PHONY : src/link_optimization.i
-
-# target to preprocess a source file
-src/link_optimization.c.i:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.i
-.PHONY : src/link_optimization.c.i
-
-src/link_optimization.s: src/link_optimization.c.s
-
-.PHONY : src/link_optimization.s
-
-# target to generate assembly for a file
-src/link_optimization.c.s:
-	$(MAKE) -f CMakeFiles/lem_in_remastered.dir/build.make CMakeFiles/lem_in_remastered.dir/src/link_optimization.c.s
-.PHONY : src/link_optimization.c.s
 
 src/parse.o: src/parse.c.o
 
@@ -1950,9 +2085,24 @@ help:
 	@echo "... src/bfs.o"
 	@echo "... src/bfs.i"
 	@echo "... src/bfs.s"
+	@echo "... src/check_path.o"
+	@echo "... src/check_path.i"
+	@echo "... src/check_path.s"
 	@echo "... src/copy_lines.o"
 	@echo "... src/copy_lines.i"
 	@echo "... src/copy_lines.s"
+	@echo "... src/create_in_out_links.o"
+	@echo "... src/create_in_out_links.i"
+	@echo "... src/create_in_out_links.s"
+	@echo "... src/delete_dead_links.o"
+	@echo "... src/delete_dead_links.i"
+	@echo "... src/delete_dead_links.s"
+	@echo "... src/delete_input_links.o"
+	@echo "... src/delete_input_links.i"
+	@echo "... src/delete_input_links.s"
+	@echo "... src/delete_output_links.o"
+	@echo "... src/delete_output_links.i"
+	@echo "... src/delete_output_links.s"
 	@echo "... src/form_path.o"
 	@echo "... src/form_path.i"
 	@echo "... src/form_path.s"
@@ -1962,6 +2112,9 @@ help:
 	@echo "... src/free_data2.o"
 	@echo "... src/free_data2.i"
 	@echo "... src/free_data2.s"
+	@echo "... src/get_links_position.o"
+	@echo "... src/get_links_position.i"
+	@echo "... src/get_links_position.s"
 	@echo "... src/get_real_links_connections.o"
 	@echo "... src/get_real_links_connections.i"
 	@echo "... src/get_real_links_connections.s"
@@ -1977,9 +2130,6 @@ help:
 	@echo "... src/lem_in.o"
 	@echo "... src/lem_in.i"
 	@echo "... src/lem_in.s"
-	@echo "... src/link_optimization.o"
-	@echo "... src/link_optimization.i"
-	@echo "... src/link_optimization.s"
 	@echo "... src/parse.o"
 	@echo "... src/parse.i"
 	@echo "... src/parse.s"

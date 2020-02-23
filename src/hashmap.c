@@ -64,7 +64,6 @@ void				ht_set(t_ht *hashtable, const char *key, t_room **value)
 	entry = hashtable->entries[slot];
 	if (entry == NULL || entry->key == NULL)
 	{
-//		ft_printf("glob_ht_count = %d, value edding in NULL = %s\n", glob_ht_pair_count + 1, (*value)->name);
 		glob_ht_pair_count++;
 		hashtable->entries[slot] = ht_pair(key, value);
 		return ;
@@ -81,9 +80,6 @@ void				ht_set(t_ht *hashtable, const char *key, t_room **value)
 		entry = prev->next;
 //		prev->next = entry;
 	}
-//	ft_printf("glob_ht_count = %d, value edding = %s\n", glob_ht_pair_count, (*value)->name);
-//	glob_ht_pair_count++;
-//	prev->next = ht_pair(key, value);
 }
 
 t_room		*ht_get(t_ht *hashtable, const char *key)

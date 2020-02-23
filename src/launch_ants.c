@@ -49,7 +49,7 @@ void launch_ants(t_lem *lem, t_room *start, int ants)
 	{
 		while (out_degr_cur < start->out_degree)
 		{
-			curr_room = ht_get(lem->ht, start->out_links[out_degr_cur]);
+			curr_room = lem->valid_paths[out_degr_cur];
 			if (curr_ant <= ants && curr_room && curr_room->name != NULL && curr_room->name[0] != '\0')
 			{
 				tmp_itoa = ft_itoa(curr_ant++);

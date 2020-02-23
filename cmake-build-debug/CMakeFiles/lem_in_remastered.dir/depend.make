@@ -265,6 +265,27 @@ CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o: ../libft/includes/libft.h
 CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o: ../libft/includes/sort_algs.h
 CMakeFiles/lem_in_remastered.dir/src/copy_lines.c.o: ../src/copy_lines.c
 
+CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o: ../libft/includes/libft.h
+CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o: ../libft/includes/sort_algs.h
+CMakeFiles/lem_in_remastered.dir/src/delete_dead_links.c.o: ../src/delete_dead_links.c
+
+CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o: ../libft/includes/libft.h
+CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o: ../libft/includes/sort_algs.h
+CMakeFiles/lem_in_remastered.dir/src/delete_input_links.c.o: ../src/delete_input_links.c
+
+CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o: ../libft/includes/libft.h
+CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o: ../libft/includes/sort_algs.h
+CMakeFiles/lem_in_remastered.dir/src/delete_output_links.c.o: ../src/delete_output_links.c
+
 CMakeFiles/lem_in_remastered.dir/src/form_path.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in_remastered.dir/src/form_path.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/lem_in_remastered.dir/src/form_path.c.o: ../libft/includes/get_next_line.h

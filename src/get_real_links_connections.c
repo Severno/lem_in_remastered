@@ -23,7 +23,9 @@ int get_real_out_links(t_lem *lem, t_room *curr_room)
 		return (0);
 	while (i < MIN_LINKS)
 	{
-		if (curr_room->out_links[i] != NULL && curr_room->out_links[i][0] != '\0' && ht_get(lem->ht, curr_room->out_links[i]))
+		if (curr_room->out_links[i] != NULL
+		&& curr_room->out_links[i][0] != '\0'
+		&& ht_get(lem->ht, curr_room->out_links[i]))
 			real_out_links++;
 		i++;
 	}
@@ -37,9 +39,13 @@ int get_real_in_links(t_lem *lem, t_room *curr_room)
 
 	i = 0;
 	real_in_links = 0;
+	if (!curr_room)
+		return (0);
 	while (i < MIN_LINKS)
 	{
-		if (curr_room->in_links[i] != NULL && curr_room->in_links[i][0] != '\0' && ht_get(lem->ht, curr_room->in_links[i]))
+		if (curr_room->in_links[i] != NULL
+		&& curr_room->in_links[i][0] != '\0'
+		&& ht_get(lem->ht, curr_room->in_links[i]))
 			real_in_links++;
 		i++;
 	}

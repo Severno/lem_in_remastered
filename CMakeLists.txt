@@ -61,11 +61,13 @@ add_executable(lem_in_remastered
         src/validation.c
         src/printing.c
         src/bfs.c
-        src/link_optimization.c
         src/get_real_links_connections.c
         src/form_path.c
         src/launch_ants.c
         libft/src/get_next_line.c
-        )
+        src/delete_dead_links.c
+        src/delete_input_links.c
+        src/delete_output_links.c
+        src/delete_input_links.c src/delete_dead_links.c src/delete_output_links.c src/check_path.c src/get_links_position.c src/create_in_out_links.c)
 
 target_link_libraries(lem_in_remastered ${CMAKE_SOURCE_DIR}/libft/libft.a)

@@ -22,8 +22,9 @@ WHITE_IN:=\033[1;37m
 
 FILES = copy_lines free_data free_data2 hashmap \
 		init_structs lem_in parse queue validation \
-		printing bfs link_optimization get_real_links_connections \
-		form_path launch_ants
+		printing bfs get_real_links_connections \
+		form_path launch_ants delete_dead_links delete_input_links delete_output_links check_path \
+		get_links_position create_in_out_links
 
 FILES_LEM_IN= $(filter-out checker, $(FILES))
 OBJ_LEM_IN=$(addprefix $(OBJ_PATH), $(addsuffix .o, $(FILES_LEM_IN)))
@@ -36,7 +37,7 @@ SRC=$(addprefix src/, $(addsuffix .c, $(FILES_LEM_IN)))
 
 
 CC:=gcc
-C_FLAGS:=-Wall -Wextra -Werror -I $(HEAD_PATH)
+C_FLAGS:= -I $(HEAD_PATH)
 CACHE=.cache_exists
 
 all: libft_make $(LEM_IN)

@@ -4,7 +4,7 @@
 # define TABLE_SIZE 100000
 # define LINE_SIZE 1000000
 # define NICE_PRIME_NUMBER 37
-# define MIN_LINKS 1000
+# define MIN_LINKS 100
 # define NUM_LEN_WITH_SIGN 11
 # define NUM_LEN_NO_SIGN 10
 # define INCORRECT_ANTS "ERROR: Ants input is incorrect\n"
@@ -103,6 +103,8 @@ typedef struct			s_lem
 	char				*end;
 	int					fd;
 	int					ants_finished;
+	int					**link_con;
+	t_room				**valid_paths;
 }						t_lem;
 
 
@@ -127,6 +129,19 @@ void				free_str_links(char ***in_links, char ***out_links, char ***links);
 void				free_split_str(char ***tab);
 void				free_line_info(char ***split_str, char **lines);
 void				terminate(t_lem **lem, char *str);
+
+/*
+ * delete_input_links
+ */
+void				delete_current_link_out_in(t_room *from, t_room *to, int out_pos, int in_pos);
+
+/*
+ * check_path
+ */
+t_room				*bfs_check_path(t_lem *lem, t_room *start, char *end);
+void				add_next_path(t_room **next, t_room **starting_path, t_room **head);
+void				set_reload_bfs_lvl(t_lem *lem, t_qnode *current, int	i, char *end);
+
 
 /*
  * OLD LEMIN
@@ -223,12 +238,13 @@ void				print_queue(t_queue *queue);
 
 // bfs
 t_ht				*create_seen();
-void				bfs_set_lvl(t_lem *lem, t_room *start, char *end);
-void				reverse_set_bfs_lvl(t_lem *lem, t_qnode *current, int	in_degree, char *end);
+void				bfs_assign_lvl_room(t_lem *lem, t_room *start, char *end);
+void				reverse_bfs_set_lvl(t_lem *lem, t_qnode *current, int	in_degree, char *end);
 void				reverse_bfs_set_lel(t_lem *lem, t_room *start, char *end);
-void				align_links(t_lem *lem, t_room *start);
+void				create_in_out_links(t_lem *lem, t_room *start);
 void				set_shortest_path_bfs_lvl(t_lem *lem, t_qnode *current, int	i, char *end);
-void				find_shortest_path(t_lem *lem, t_room *start, char *end);
+//void				find_shortest_path(t_lem *lem, t_room *start, char *end);
+t_room		*bfs_check_path(t_lem *lem, t_room *start, char *end);
 /*
 	link_optimization
 */
@@ -245,6 +261,7 @@ void				delete_cur_input_link(t_room *curr_room, t_lem *lem);
 void				delete_input_links(t_lem *lem, t_room *start);
 void				delete_deciding_rooms(t_lem *lem, t_ht *deciding_paths, t_room *start, char *end);
 void				delete_out_links(t_lem *lem, t_room *start);
+void	delete_output_links(t_lem *lem, t_room *start);
 /*
 	printing
 */
@@ -316,7 +333,7 @@ int					check_ants_num(char *lines);
  */
 int					next_path(t_lem *lem, t_room *curr_room, t_room *start_path_room);
 int					is_path(t_lem *lem, t_room *start);
-void				form_paths(t_lem *lem, t_room *start);
+t_room **form_paths(t_lem *lem, t_room *start);
 
 /*
  * copy_lines

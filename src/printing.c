@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 20:05:00 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/20 21:49:44 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/23 15:03:18 by artembykov       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,31 +120,31 @@ void print_paths_linked_list(t_lem *lem, t_room *start)
 {
 	int out_degr_cur;
 	int path_count;
+	int is_valid;
 	t_room *cur_room;
 
 	out_degr_cur = 0;
 	path_count = 1;
 	ft_printf(RED"Start\n"RESET);
 	print_out_rooms(start);
+	is_valid = 0;
 	while (out_degr_cur < start->out_degree)
 	{
-
-		cur_room = ht_get(lem->ht, start->out_links[out_degr_cur]);
-		ft_printf("Path %d. %s", path_count, start->name);
-		if (!cur_room)
-		{
-			ft_putchar('\n');
-			out_degr_cur++;
-			continue;
-		}
+		cur_room = lem->valid_paths[out_degr_cur];
+		if (cur_room)
+			ft_printf("Path %d. %s", path_count++, start->name);
 		while (cur_room)
 		{
+			is_valid = 1;
 			ft_printf(" -> %s", cur_room->name);
 			cur_room = cur_room->next;
 		}
-		ft_putchar('\n');
+		if (is_valid)
+		{
+			is_valid = 0;
+			ft_putchar('\n');
+		}
 		out_degr_cur++;
-		path_count++;
 	}
 }
 

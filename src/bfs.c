@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 17:31:38 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/21 15:03:44 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/23 18:24:14 by artembykov       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ t_ht		*create_seen()
 	return (new_ht);
 }
 
-void set_bfs_lvl(t_lem *lem, t_qnode *current, int	i, char *end)
+void bfs_set_lvl(t_lem *lem, t_qnode *current, int	i, char *end)
 {
 	t_room *curr_room;
 
@@ -46,7 +46,10 @@ void set_bfs_lvl(t_lem *lem, t_qnode *current, int	i, char *end)
 		curr_room->bfs_lvl = current->room->bfs_lvl + 1;
 }
 
-void		bfs_set_lvl(t_lem *lem, t_room *start, char *end)
+
+
+
+void		bfs_assign_lvl_room(t_lem *lem, t_room *start, char *end)
 {
 	t_ht	*seen;
 	t_queue	*queue;
@@ -65,20 +68,14 @@ void		bfs_set_lvl(t_lem *lem, t_room *start, char *end)
 			continue;
 		if (!current->room->name)
 			continue;
-//		print_queue(queue);
-//		print_ht_seen(seen);
-//		ft_printf(BLUE"Current working %s \n"RESET, current->room->name);
-//		ft_printf("Current node = %s, bfs_lvl = %d\n", current->room->name, current->room->bfs_lvl);
 		if (!ht_get(seen, current->room->name))
 		{
 			ht_set(seen, current->room->name, &current->room);
 			while (i < current->room->links_degree)
 			{
-				set_bfs_lvl(lem, current, i, end);
-				if (!ht_get(seen, current->room->links[i])) // если его нет в просмотренном добавляем в очередь
+				bfs_set_lvl(lem, current, i, end);
+				if (!ht_get(seen, current->room->links[i]))
 					enqueue(queue, ht_get(lem->ht, current->room->links[i]));
-//				print_queue(queue);
-//				print_ht_seen(seen);
 				i++;
 			}
 		}
@@ -88,4 +85,3 @@ void		bfs_set_lvl(t_lem *lem, t_room *start, char *end)
 	free(queue);
 	free_seen(&seen);
 }
-
