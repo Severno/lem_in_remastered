@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lem_in_final"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/sapril/lem_in_final/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/sapril/lem_in_final/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/sapril/lem_in_final/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lem_in_final">
+				<Option output="/Users/sapril/lem_in_final/cmake-build-debug/lem_in_final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sapril/lem_in_final/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/sapril/lem_in_final/includes"/>
+					<Add directory="/Users/sapril/lem_in_final/libft/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 lem_in_final"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lem_in_final/fast">
+				<Option output="/Users/sapril/lem_in_final/cmake-build-debug/lem_in_final" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sapril/lem_in_final/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/sapril/lem_in_final/includes"/>
+					<Add directory="/Users/sapril/lem_in_final/libft/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 lem_in_final/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sapril/lem_in_final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/sapril/lem_in_final/includes/error_code.h">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/includes/lem_in.h">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/includes/ft_printf.h">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/includes/get_next_line.h">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/includes/libft.h">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/includes/sort_algs.h">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_array/ft_get_number_of_substrings.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_array/ft_print_int_arr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_array/ft_print_ll_arr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_array/ft_print_pstr_arr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_array/ft_print_sizet_arr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_array/ft_print_str_arr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_lst/ft_lstadd.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_lst/ft_lstdel.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_lst/ft_lstdelone.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_lst/ft_lstiter.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_lst/ft_lstmap.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_lst/ft_lstnew.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_abs.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_log2n.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_max_of_three.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_max_of_two.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_middle_of_three.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_min_of_two.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_math/ft_recursive_power.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_bzero.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memalloc.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memccpy.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memchr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memcmp.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memcpy.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memdel.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memmove.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_mem/ft_memset.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_atoi.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_atoll.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_atoul.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_copy_int_arr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_count_spaces.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_num_of_digits.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_num_of_fields.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_num/ft_unnum_of_fields.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/alignment.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/calc_float_width.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/calc_signed_precision.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/calc_signed_width.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/calc_unsigned_precision.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/calc_unsigned_width.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/check_conventions.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_cs.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_di.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_f.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_f_handle.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_o.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_p.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_percent.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_u.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/flag_x.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/ft_ftoa.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/ft_printf.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/get_flags.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/handle_float_conditions.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/handle_float_zeros.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/parse_flags.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/pf_putnbr_base.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/pf_putstr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/pf_putunbr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/pf_strcat.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/pf_strchr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/pf_strchr_flags.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/precision.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_d.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_f.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_o.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_p.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_percent.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_u.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/print_x.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/removes_flags.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_printf/utils.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putchar.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putchar_fd.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putendl.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putendl_fd.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putnbr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putnbr_base.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putnbr_fd.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putstr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putstr_fd.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_put/ft_putunbr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_searching/ft_quick_select.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_sorting/ft_bubble_sort.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_sorting/ft_merge_sort.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_sorting/ft_merge_sort_sizet.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_sorting/ft_quick_sort.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_check_end_spaces.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_check_start_spaces.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_convert_dec_base_to_str.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_convert_undec_base_to_str.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_error_found.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_find_and_remove_char.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_free_split_str.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_isalnum.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_isalpha.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_isascii.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_isdigit.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_isprint.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_isspace.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_itoa.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_str_is_lowercase.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_str_is_numeric_no_spaces.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_str_is_numeric_with_spaces.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_str_is_printable.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_str_is_uppercase.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strcat.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strchr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strclr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strcmp.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strcpy.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strdel.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strdup.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strequ.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_striter.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_striteri.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strjoin.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strlcat.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strlen.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strmap.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strmapi.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strncat.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strncmp.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strncpy.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strnequ.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strnew.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strnlen.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strnstr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strrchr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strsplit.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strstr.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strsub.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_strtrim.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_tolower.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/ft_str/ft_toupper.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/libft/src/get_next_line.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/buffer.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/commands.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/copy_lines.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/debug.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/engine.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/engine_utils.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/errors.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/lem_in.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/moving.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/moving_utils.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/parse.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/parse_utils.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/utils.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/verify.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/src/verify_utils.c">
+			<Option target="lem_in_final"/>
+		</Unit>
+		<Unit filename="/Users/sapril/lem_in_final/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

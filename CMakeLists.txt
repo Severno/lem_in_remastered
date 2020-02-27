@@ -1,14 +1,159 @@
-cmake_minimum_required(VERSION 3.15)
-project(lem_in C)
+cmake_minimum_required(VERSION 3.14)
+project(lem_in_final C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(includes)
-include_directories(libft)
+include_directories(libft/includes)
 
-add_executable(lem_in
+add_executable(lem_in_final
+        includes/error_code.h
+        includes/lem_in.h
+        libft/includes/ft_printf.h
+        libft/includes/get_next_line.h
+        libft/includes/libft.h
+        libft/includes/sort_algs.h
+        libft/src/ft_array/ft_get_number_of_substrings.c
+        libft/src/ft_array/ft_print_int_arr.c
+        libft/src/ft_array/ft_print_ll_arr.c
+        libft/src/ft_array/ft_print_pstr_arr.c
+        libft/src/ft_array/ft_print_sizet_arr.c
+        libft/src/ft_array/ft_print_str_arr.c
+        libft/src/ft_lst/ft_lstadd.c
+        libft/src/ft_lst/ft_lstdel.c
+        libft/src/ft_lst/ft_lstdelone.c
+        libft/src/ft_lst/ft_lstiter.c
+        libft/src/ft_lst/ft_lstmap.c
+        libft/src/ft_lst/ft_lstnew.c
+        libft/src/ft_math/ft_abs.c
+        libft/src/ft_math/ft_log2n.c
+        libft/src/ft_math/ft_max_of_three.c
+        libft/src/ft_math/ft_max_of_two.c
+        libft/src/ft_math/ft_middle_of_three.c
+        libft/src/ft_math/ft_min_of_two.c
+        libft/src/ft_math/ft_recursive_power.c
+        libft/src/ft_mem/ft_bzero.c
+        libft/src/ft_mem/ft_memalloc.c
+        libft/src/ft_mem/ft_memccpy.c
+        libft/src/ft_mem/ft_memchr.c
+        libft/src/ft_mem/ft_memcmp.c
+        libft/src/ft_mem/ft_memcpy.c
+        libft/src/ft_mem/ft_memdel.c
+        libft/src/ft_mem/ft_memmove.c
+        libft/src/ft_mem/ft_memset.c
+        libft/src/ft_num/ft_atoi.c
+        libft/src/ft_num/ft_atoll.c
+        libft/src/ft_num/ft_atoul.c
+        libft/src/ft_num/ft_copy_int_arr.c
+        libft/src/ft_num/ft_count_spaces.c
+        libft/src/ft_num/ft_num_of_digits.c
+        libft/src/ft_num/ft_num_of_fields.c
+        libft/src/ft_num/ft_unnum_of_fields.c
+        libft/src/ft_printf/alignment.c
+        libft/src/ft_printf/calc_float_width.c
+        libft/src/ft_printf/calc_signed_precision.c
+        libft/src/ft_printf/calc_signed_width.c
+        libft/src/ft_printf/calc_unsigned_precision.c
+        libft/src/ft_printf/calc_unsigned_width.c
+        libft/src/ft_printf/check_conventions.c
+        libft/src/ft_printf/flag_cs.c
+        libft/src/ft_printf/flag_di.c
+        libft/src/ft_printf/flag_f.c
+        libft/src/ft_printf/flag_f_handle.c
+        libft/src/ft_printf/flag_o.c
+        libft/src/ft_printf/flag_p.c
+        libft/src/ft_printf/flag_percent.c
+        libft/src/ft_printf/flag_u.c
+        libft/src/ft_printf/flag_x.c
+        libft/src/ft_printf/ft_ftoa.c
+        libft/src/ft_printf/ft_printf.c
+        libft/src/ft_printf/get_flags.c
+        libft/src/ft_printf/handle_float_conditions.c
+        libft/src/ft_printf/handle_float_zeros.c
+        libft/src/ft_printf/parse_flags.c
+        libft/src/ft_printf/pf_putnbr_base.c
+        libft/src/ft_printf/pf_putstr.c
+        libft/src/ft_printf/pf_putunbr.c
+        libft/src/ft_printf/pf_strcat.c
+        libft/src/ft_printf/pf_strchr.c
+        libft/src/ft_printf/pf_strchr_flags.c
+        libft/src/ft_printf/precision.c
+        libft/src/ft_printf/print_d.c
+        libft/src/ft_printf/print_f.c
+        libft/src/ft_printf/print_o.c
+        libft/src/ft_printf/print_p.c
+        libft/src/ft_printf/print_percent.c
+        libft/src/ft_printf/print_u.c
+        libft/src/ft_printf/print_x.c
+        libft/src/ft_printf/removes_flags.c
+        libft/src/ft_printf/utils.c
+        libft/src/ft_put/ft_putchar.c
+        libft/src/ft_put/ft_putchar_fd.c
+        libft/src/ft_put/ft_putendl.c
+        libft/src/ft_put/ft_putendl_fd.c
+        libft/src/ft_put/ft_putnbr.c
+        libft/src/ft_put/ft_putnbr_base.c
+        libft/src/ft_put/ft_putnbr_fd.c
+        libft/src/ft_put/ft_putstr.c
+        libft/src/ft_put/ft_putstr_fd.c
+        libft/src/ft_put/ft_putunbr.c
+        libft/src/ft_searching/ft_quick_select.c
+        libft/src/ft_sorting/ft_bubble_sort.c
+        libft/src/ft_sorting/ft_merge_sort.c
+        libft/src/ft_sorting/ft_merge_sort_sizet.c
+        libft/src/ft_sorting/ft_quick_sort.c
+        libft/src/ft_str/ft_check_end_spaces.c
+        libft/src/ft_str/ft_check_start_spaces.c
+        libft/src/ft_str/ft_convert_dec_base_to_str.c
+        libft/src/ft_str/ft_convert_undec_base_to_str.c
+        libft/src/ft_str/ft_error_found.c
+        libft/src/ft_str/ft_find_and_remove_char.c
+        libft/src/ft_str/ft_free_split_str.c
+        libft/src/ft_str/ft_isalnum.c
+        libft/src/ft_str/ft_isalpha.c
+        libft/src/ft_str/ft_isascii.c
+        libft/src/ft_str/ft_isdigit.c
+        libft/src/ft_str/ft_isprint.c
+        libft/src/ft_str/ft_isspace.c
+        libft/src/ft_str/ft_itoa.c
+        libft/src/ft_str/ft_str_is_lowercase.c
+        libft/src/ft_str/ft_str_is_numeric_no_spaces.c
+        libft/src/ft_str/ft_str_is_numeric_with_spaces.c
+        libft/src/ft_str/ft_str_is_printable.c
+        libft/src/ft_str/ft_str_is_uppercase.c
+        libft/src/ft_str/ft_strcat.c
+        libft/src/ft_str/ft_strchr.c
+        libft/src/ft_str/ft_strclr.c
+        libft/src/ft_str/ft_strcmp.c
+        libft/src/ft_str/ft_strcpy.c
+        libft/src/ft_str/ft_strdel.c
+        libft/src/ft_str/ft_strdup.c
+        libft/src/ft_str/ft_strequ.c
+        libft/src/ft_str/ft_striter.c
+        libft/src/ft_str/ft_striteri.c
+        libft/src/ft_str/ft_strjoin.c
+        libft/src/ft_str/ft_strlcat.c
+        libft/src/ft_str/ft_strlen.c
+        libft/src/ft_str/ft_strmap.c
+        libft/src/ft_str/ft_strmapi.c
+        libft/src/ft_str/ft_strncat.c
+        libft/src/ft_str/ft_strncmp.c
+        libft/src/ft_str/ft_strncpy.c
+        libft/src/ft_str/ft_strnequ.c
+        libft/src/ft_str/ft_strnew.c
+        libft/src/ft_str/ft_strnlen.c
+        libft/src/ft_str/ft_strnstr.c
+        libft/src/ft_str/ft_strrchr.c
+        libft/src/ft_str/ft_strsplit.c
+        libft/src/ft_str/ft_strstr.c
+        libft/src/ft_str/ft_strsub.c
+        libft/src/ft_str/ft_strtrim.c
+        libft/src/ft_str/ft_tolower.c
+        libft/src/ft_str/ft_toupper.c
+        libft/src/get_next_line.c
         src/buffer.c
         src/commands.c
+        src/copy_lines.c
         src/debug.c
         src/engine.c
         src/engine_utils.c
@@ -20,8 +165,6 @@ add_executable(lem_in
         src/parse_utils.c
         src/utils.c
         src/verify.c
-        src/verify_utils.c
-        src/copy_lines.c
-        )
+        src/verify_utils.c)
 
-target_link_libraries(lem_in ${CMAKE_SOURCE_DIR}/libft/libft.a)
+

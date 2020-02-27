@@ -50,6 +50,9 @@ CC:=gcc
 C_FLAGS:= -I $(HEAD_PATH)
 CACHE=.cache_exists
 
+COUNTER= 1
+LENGTH= $(words $(FILES))
+
 all: libft_make $(LEM_IN)
 
 libft_make:
@@ -59,6 +62,9 @@ $(LEM_IN): $(OBJ_LEM_IN) $(LIBFT_NAME)
 	gcc $(OBJ_LEM_IN) $(LIBFT_NAME) -o $(LEM_IN)
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c $(HEAD_PATH) | $(CACHE)
+	@printf '$(CYAN_IN)%-20s$(RED_IN)%-50s $(GREEN_IN)%-8s' "- Compile function:" "$<" "$(COUNTER)/$(LENGTH)"
+	@echo "\r\c"
+	@$(eval COUNTER=$(shell echo $$(($(COUNTER)+1))))
 	$(CC) $(C_FLAGS) -c $< -o $@
 
 %.c:
