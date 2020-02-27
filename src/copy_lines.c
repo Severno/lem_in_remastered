@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   copy_lines.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/19 13:11:46 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/19 13:21:20 by sapril           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../includes/lem_in.h"
 
 char	*lem_strcat(char *s1, const char *s2, int *bytes)
@@ -31,13 +19,13 @@ char	*lem_strcat(char *s1, const char *s2, int *bytes)
 	return (s1);
 }
 
-char	*concat_lines(char *dst, char *src, int *bytes, int *mult)
+char	*concat_buffer(char *dst, char *src, int *bytes, int *mult)
 {
 	char *tmp;
-	if ((*bytes) + 100 >= LINE_SIZE)
+	if ((*bytes) + 100 >= BUFFER_SIZE)
 	{
 		*mult += 1;
-		tmp = ft_strnew(LINE_SIZE * (*mult));
+		tmp = ft_strnew(BUFFER_SIZE * (*mult));
 		ft_strcpy(tmp, dst);
 		free(dst);
 		tmp = lem_strcat(tmp, src, bytes);

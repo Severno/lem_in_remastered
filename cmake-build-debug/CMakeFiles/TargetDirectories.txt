@@ -1,3 +1,3 @@
-/Users/artembykov/lem_in_remastered/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/artembykov/lem_in_remastered/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/artembykov/lem_in_remastered/cmake-build-debug/CMakeFiles/lem_in_remastered.dir
+/Users/artembykov/bdelmane/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/artembykov/bdelmane/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/artembykov/bdelmane/cmake-build-debug/CMakeFiles/lem_in.dir

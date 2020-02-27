@@ -1,0 +1,15 @@
+2
+# this is start
+##start
+a 1 1
+# this is end
+##end
+b 2 2
+#
+# this is a useless comment
+c 3 3
+#  tiiis is        a weird comment
+d 5 5
+c-a
+b-d
+c-d

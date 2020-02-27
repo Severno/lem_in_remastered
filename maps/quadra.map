@@ -1,0 +1,29 @@
+10
+##start
+START 100 100
+##end
+END 101 101
+# side left
+a 1 1
+b 2 2
+c 3 3
+##debug
+##color
+d 4 4
+# side right
+e 5 5
+f 6 6
+g 7 7
+h 8 8
+START-a
+START-b
+START-c
+START-d
+a-e
+b-f
+c-g
+d-h
+e-END
+f-END
+g-END
+h-END

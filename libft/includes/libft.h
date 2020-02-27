@@ -6,7 +6,7 @@
 /*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 17:48:40 by sapril            #+#    #+#             */
-/*   Updated: 2020/01/22 16:34:55 by sapril           ###   ########.fr       */
+/*   Updated: 2020/02/27 13:15:39 by artembykov       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 # include "get_next_line.h"
 # include "ft_printf.h"
 # include <sys/errno.h>
+# include <stdint.h>
+# include <limits.h>
 
 # define MAX_LONG		9223372036854775807
 # define MAX_INTEGER	2147483647
@@ -132,5 +134,10 @@ void				ft_print_sizet_arr(size_t *num_arr,
 					int in_line, size_t size);
 int					ft_max_of_three(int a, int b, int c);
 int					log2n(unsigned int n);
+void				ft_error_found(char *str);
+intmax_t			ft_atoll(const char *str);
+int					ft_count_spaces(char *str);
+int					ft_recursive_power(int nb, int power);
+void				ft_free_split_str(char ***tab);
 
 #endif

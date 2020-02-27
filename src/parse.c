@@ -1,142 +1,109 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   parse.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/19 14:05:13 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/23 13:58:36 by artembykov       ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../includes/lem_in.h"
 
-int parse(t_lem *lem)
+static void	parse_link_into_rooms(char *line, int index_a,
+	int index_b, t_parse *parser)
 {
-	char	*lines;
-	char	**split_str;
+	int		index_of_new_path;
 
-	while (get_next_line(lem->fd, &lines) > 0)
-	{
-		concat_lines(lem->concat->lines, lines, &lem->concat->bytes, &lem->concat->mult);
-			split_str = ft_strsplit(lines, ' ');
-			if (is_comment(lines))
-			{
-				free_line_info(&split_str, &lines);
-				continue;
-			}
-			else if (is_ant(lem, lines, split_str) > 0 && lem->ants == -1)
-				parse_ants(lem, &lines, split_str) == 0 ? terminate(&lem, INCORRECT_ANTS) : 0;
-			else if (is_end_or_start(lem, split_str, &lines))
-				parse_end_or_start(lem, &lines, split_str);
-			else if (is_room(lem, split_str, &lines))
-			{
-				parse_rooms(lem, &lines, split_str);
-			}
-			else if (ft_strchr(lines, '-') && split_str[1] == NULL && is_link(lem, split_str, &lines))
-			{
-				parse_links(lem, &lines, split_str);
-			}
-			else
-				free_line_info(&split_str, &lines);
-	}
-
-	if (lem->ants <= -1)
-		terminate(&lem, INCORRECT_ANTS);
-	return (1);
+	verify_that_link_does_not_already_exists(line, parser->rooms[index_a],
+		index_b, parser);
+	verify_that_link_does_not_already_exists(line, parser->rooms[index_b],
+		index_a, parser);
+	index_of_new_path = parser->rooms[index_a].nb_paths;
+	parser->rooms[index_a].paths[index_of_new_path] = index_b;
+	index_of_new_path = parser->rooms[index_b].nb_paths;
+	parser->rooms[index_b].paths[index_of_new_path] = index_a;
+	parser->rooms[index_a].nb_paths += 1;
+	parser->rooms[index_b].nb_paths += 1;
+	ft_strdel(&line);
 }
 
-int parse_ants(t_lem *lem, char **lines, char **split_str)
+/*
+** In a link : index_a-index_b
+*/
+
+void		parse_link(char *line, t_parse *parser)
 {
-	if (check_ants_num(*lines))
+	char	**parsed_line;
+	int		index_a;
+	int		index_b;
+	int		i;
+
+	index_a = -1;
+	index_b = -1;
+	i = 0;
+	parsed_line = ft_strsplit(line, '-');
+	while (i < parser->nb_rooms)
 	{
-		if ((lem->ants = ft_atoi(split_str[0])) < 0)
-			terminate(&lem, INCORRECT_ANTS);
-		free_line_info(&split_str, lines);
-		return (1);
+		if (ft_strequ(parser->rooms[i].name, parsed_line[0]))
+			index_a = i;
+		if (ft_strequ(parser->rooms[i].name, parsed_line[1]))
+			index_b = i;
+		i++;
 	}
-	return (0);
+	if (index_a == -1 || index_b == -1)
+		syntax_error(line, MSG_LINK_NO_ROOM, parser->nbr_line);
+	ft_free_split_str(&parsed_line);
+	parse_link_into_rooms(line, index_a, index_b, parser);
 }
 
-int parse_end_or_start(t_lem *lem, char **lines, char **split_str)
+void		parse_rooms_to_link(char *line, t_parse *parser)
 {
-	int		ret;
-	char *tmp_end_start;
-	t_room	*new_room;
+	int				i;
+	int				index;
+	t_room_parse	*tmp;
 
-	tmp_end_start = ft_strdup(split_str[0]);
-	free_line_info(&split_str, lines);
-	ret = get_next_line(lem->fd, lines);
-	split_str = ft_strsplit(*lines, ' ');
-	if (ret < 0 || !is_room(lem, split_str, lines))
+	parser->link_found = 1;
+	errors_before_parsing_rooms_to_link(line, parser);
+	parser->rooms = (t_room *)ft_memalloc(sizeof(t_room) * parser->nb_rooms);
+	i = 0;
+	tmp = parser->room;
+	while (tmp)
 	{
-		free(tmp_end_start);
-		free_line_info(&split_str, lines);
-		terminate(&lem, INCORRECT_END);
+		if (tmp->start)
+			index = 0;
+		else if (tmp->end)
+			index = 1;
+		else
+		{
+			index = i + 2;
+			i++;
+		}
+		parser->rooms[index] = parse_room_from_chained_list(tmp, parser);
+		tmp = tmp->next;
 	}
-	if (!ht_get(lem->ht, split_str[0]))
+}
+
+void		parse_room(char *line, t_parse *parser, int start, int end)
+{
+	char			**parsed_line;
+	t_room_parse	*new_room;
+
+	new_room = (t_room_parse *)ft_memalloc(sizeof(t_room_parse));
+	parsed_line = ft_strsplit(line, ' ');
+	new_room->name = ft_strdup(parsed_line[0]);
+	new_room->x = ft_atoi(parsed_line[1]);
+	new_room->y = ft_atoi(parsed_line[2]);
+	new_room->start = start;
+	new_room->end = end;
+	new_room->next = parser->room;
+	parser->room = new_room;
+	parser->nb_rooms = parser->nb_rooms + 1;
+	ft_free_split_str(&parsed_line);
+	ft_strdel(&line);
+}
+
+void		parse_command(char *line, t_parse *parser)
+{
+	if (ft_strequ(line + 2, "start"))
+		handle_command_start(line, parser);
+	else if (ft_strequ(line + 2, "end"))
+		handle_command_end(line, parser);
+	else if (ft_strequ(line + 2, "color"))
 	{
-		if (ft_strequ(tmp_end_start, "##start"))
-			lem->start = ft_strdup(split_str[0]);
-		if (ft_strequ(tmp_end_start, "##end"))
-			lem->end = ft_strdup(split_str[0]);
+		parser->color = 1;
+		ft_strdel(&line);
 	}
 	else
-	{
-		free(tmp_end_start);
-		free_line_info(&split_str, lines);
-		terminate(&lem, DUPLICATE_ROOM);
-	}
-	new_room = create_room(&split_str[0], ft_atoi(split_str[1]), ft_atoi(split_str[2]));
-	ht_set(lem->ht, split_str[0], &new_room);
-	lem->rooms_cap++;
-	free_line_info(&split_str, lines);
-	free(tmp_end_start);
-	return (1);
-}
-
-int parse_rooms(t_lem *lem, char **lines, char **split_str)
-{
-	t_room	*new_room;
-	(void)lines;
-	(void)split_str;
-	(void)new_room;
-
-	new_room = create_room(&split_str[0], ft_atoi(split_str[1]), ft_atoi(split_str[2]));
-	ht_set(lem->ht, split_str[0], &new_room);
-	lem->rooms_cap++;
-//	ft_printf("Rooms created = %d\n", lem->rooms_cap);
-//	free_line_info(&split_str, lines);
-	return (1);
-}
-
-void add_link(t_room *room, char *link)
-{
-	room->links[room->links_degree] = ft_strcpy(room->links[room->links_degree], link);
-	room->links_degree++;
-}
-
-int parse_links(t_lem *lem, char **lines, char **split_str)
-{
-	char *link_str;
-	char *link1_str;
-	char *link2_str;
-	t_room	*link1;
-	t_room	*link2;
-	int biggest_delimeter;
-
-	(void)lines;
-//	lem->link_con = ft_memalloc(sizeof(int *) * lem->rooms_cap);
-	link_str = split_str[0];
-	biggest_delimeter = get_biggest_delimeter(lem, link_str, ft_strlen(link_str));
-	link1_str = lem_strdub(link_str, get_biggest_delimeter(lem, link_str, ft_strlen(link_str)));
-	link2_str = lem_strdub(link_str + biggest_delimeter + 1,  ft_strlen(link_str));
-	link1 = ht_get(lem->ht, link1_str);
-	link2 = ht_get(lem->ht, link2_str);
-	add_link(link1, link2_str);
-	add_link(link2, link1_str);
-	free(link1_str);
-	free(link2_str);
-	return (1);
+		ft_strdel(&line);
 }

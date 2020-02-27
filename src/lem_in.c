@@ -1,45 +1,86 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   lem_in.c                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sapril <sapril@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 14:17:21 by sapril            #+#    #+#             */
-/*   Updated: 2020/02/23 18:46:36 by artembykov       ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../includes/lem_in.h"
 
-int			main(int argc, char *argv[])
+static void		read_flags(t_parse *parser, int av, char **ac)
 {
-	t_lem *lem;
-	t_room *start;
-	(void)argc;
-	(void)argv;
+	int		i;
 
-	lem = create_lem_in();
-	parse(lem);
-	start = ht_get(lem->ht, lem->start);
-	print_lines(lem->concat->lines);
-	bfs_assign_lvl_room(lem, start, lem->end);
-	delete_useless_links(lem, start);
-	create_in_out_links(lem, start);
-//	print_rooms(lem);
-	delete_input_links(lem, start);
-	delete_output_links(lem, start);
-//	delete_out_links(lem, start);
-//	print_rooms_out_in(lem);
+	i = 1;
+	while (i < av)
+	{
+		if (ft_strequ("--color", ac[i]))
+			parser->color = 1;
+		else
+			syntax_error(ac[i], MSG_UNKNOWN_FLAG, 0);
+		i++;
+	}
+}
 
-//	find_shortest_path(lem, start, lem->end);
-////	print_rooms(lem);
-//	sleep(100);
-	lem->valid_paths = form_paths(lem, start);
-//	print_paths_linked_list(lem, start);
-//	sleep(1000);
-	launch_ants(lem,  ht_get(lem->ht, lem->start), lem->ants);
-	free_data(&lem);
-//	delete_output_links(lem, start);
+/*
+** Free the parse structure and create the engine structure
+*/
+
+static t_engine	get_engine(t_parse *parser)
+{
+	t_engine		engine;
+	t_room_parse	*tmp;
+	t_room_parse	*fst;
+
+	engine.nbr_ants = parser->nbr_ants;
+	engine.nb_rooms = parser->nb_rooms;
+	engine.rooms = parser->rooms;
+	engine.color = parser->color;
+	engine.nb_paths = 0;
+	fst = parser->room;
+	while (fst)
+	{
+		tmp = fst->next;
+		ft_memdel((void **)&fst);
+		fst = tmp;
+	}
+	parser->room = NULL;
+	return (engine);
+}
+
+static void		parse_line(char *line, t_parse *parser)
+{
+	if (is_command(line))
+		parse_command(line, parser);
+	else if (is_room(line, parser))
+		parse_room(line, parser, 0, 0);
+	else if (is_link(line, parser))
+	{
+		if (!parser->link_found)
+			parse_rooms_to_link(line, parser);
+		parse_link(line, parser);
+	}
+	else if (!is_comment(line))
+		syntax_error(line, MSG_UNKNOWN_SETTING, parser->nbr_line);
+	else if (is_comment(line))
+		ft_strdel(&line);
+}
+
+static void		parse(t_parse *parser)
+{
+	char *line;
+
+	handle_comments(&line, parser);
+	parser->nbr_ants = parse_ants(line);
+	ft_strdel(&line);
+	while (read_line(&line, parser) > 0)
+		parse_line(line, parser);
+}
+
+int				main(int av, char **ac)
+{
+	t_parse		parser;
+	t_engine	engine;
+
+	init_parser(&parser);
+	read_flags(&parser, av, ac);
+	parse(&parser);
+	handle_errors_final(parser);
+	print_buffer(&parser);
+	engine = get_engine(&parser);
+	start_engine(&engine);
 	return (0);
 }

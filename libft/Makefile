@@ -19,7 +19,8 @@ LIBFT_MATH_SRC= ft_abs \
 				ft_max_of_two \
 				ft_middle_of_three \
 				ft_min_of_two \
-				ft_log2n
+				ft_log2n \
+				ft_recursive_power \
 
 LIBFT_MEM_PATH:=	ft_mem/
 LIBFT_MEM_SRC:=	ft_bzero \
@@ -34,12 +35,13 @@ LIBFT_MEM_SRC:=	ft_bzero \
 
 LIBFT_NUM_PATH:=	ft_num/
 LIBFT_NUM_SRC:= ft_atoi \
-				ft_atol \
+				ft_atoll \
 				ft_atoul \
 				ft_num_of_digits \
 				ft_num_of_fields \
 				ft_unnum_of_fields \
 				ft_copy_int_arr \
+				ft_count_spaces \
 
 PRINTF_PATH:=	ft_printf/
 PRINTF_SRC:=		alignment calc_signed_precision calc_signed_width \
@@ -109,7 +111,9 @@ LIBFT_STR_SRC:= ft_check_end_spaces \
 				ft_strtrim \
 				ft_tolower \
 				ft_toupper \
-				ft_str_is_numeric_no_spaces
+				ft_str_is_numeric_no_spaces \
+				ft_error_found \
+				ft_free_split_str
 
 FT_SORTING_PATH:=	ft_sorting/
 FT_SORTING_SRC:=	ft_merge_sort ft_merge_sort_sizet ft_bubble_sort ft_quick_sort

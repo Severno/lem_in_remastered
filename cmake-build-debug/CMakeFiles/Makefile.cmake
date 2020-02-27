@@ -47,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lem_in_remastered.dir/DependInfo.cmake"
+  "CMakeFiles/lem_in.dir/DependInfo.cmake"
   )
